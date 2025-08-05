@@ -1,0 +1,3459 @@
+--- Page 1 ---
+COMPUTER
+ORGANIZATION AND
+ARCHITECTURE
+Computer
+Architecture
+and
+Organization
+
+--- Page 2 ---
+‘Computer Organization and Architectire
+
+STRUCTURE. OF COMPUTERS: Computer types, funestanal units, baste aperarional canceprs,
+
+Von-Neumann architecture, bus structures, software, performance, multipracessars and
+
+multicamputer
+
+Book: Carl Hamacher, Zvonks Vranesic, SafeaZaky (2002), Computer Organization, Sth
+
+edition, McGraw Hill: Unit-1 Pages: 1-23
+
+Data representation, fixed and floating point and error detecting codes.
+
+Book: M. Moris Mano (2006), Computer System Architecture, 3rd edition, Pearson/PHI,
+
+India: Unit-3 Pages: 67-91
+
+REGISTER TRANSFER AND MICRO-OPERATIONS: Register transfer language, reyister
+
+transfer, bus and memory transfers, arithmerle micra-operations, lagie rnlcro-operations,
+
+shift mtero-operations, arithmetic logic shift nt.
+
+Rook: M. Moris Mano (2006), Computer System Architecture, 3rd edition, Pearson/PHI,
+
+India: Unit-3 Pages: 93-118
+
+Computer Architecture:
+
+Computer Architecture deals with giving operational attributes of the computer or Processor
+
+to be specific. It deals with details like physical memory, ISA (Instruction Set Architecture) of
+
+the processor, the number of bits used tw represent the data types, Input Output ecianisem
+
+and technique foraddressing memories.
+
+Computer Oreanization:
+
+Computer Organization Is realization af what 1s specified by the computer architecture .It
+
+deals with haw operational attributes are linkedl tagether ra meet the requirements specified
+
+bby computer architecture. Some organizational attributes are hardware details, control
+
+signals, peripherals.
+
+EXAMPLE:
+
+Say you are in a company that manufactures cars, design and all low-level details of the car
+
+‘come under computer architecture (abstract, programmers view), while making i's parts
+
+piece by piece and connecting together the different components of that car by keeping the
+
+basic design in mind comes under computer organization (physical and visible).
+
+Computer Organization Computer Architecture
+
+Page?
+
+--- Page 3 ---
+‘Computer Organization and Architectire
+Notehaoke: - These computers arc as powerful as deskrap but size af these compuroes are
+comparatively smaller than laptop and desktop. They weigh ? ta 3 kg. They are mare costly
+than laptop.
+Palmtop (Hand held): - They are also called as personal Digital Assistant (PDA), These
+‘computers are small in size. Yhey can be held in hands. Itis capable of doing word processing,
+spreadsheets and hand writing recognition, game playing, faxing and paging. ‘These
+computers are not as powerful as desktop computers. Ex: - 3com palm.
+‘Wearable camputer: - Tho size of this computer Is very small so that it can he warn an the
+body. It has smaller pracessing power. It used fm the Meld of medicine. Far example pace
+‘maker te correct the heart beats. Insulin meter to find the levels of insulin in the blood.
+‘Workstations: It is used in large, high-resolution graphics screen built in network support,
+Engineering applications{CAD/CAM), software development des¥top publishing
+
+Page It
+
+--- Page 4 ---
+Computer Organiavion and Archirerture
+Division Algorithm
+‘Tho divisor is stared in register R and a dove length dlvicend is stored in rgtsror Aand Q
+the dlvidend Is shifted to the left and the divider Is subtracted hy adding twice camplement of
+until the sequence counter reaches to U. The registers E, A & (are shited tothe left with O
+inserted into Qu and the previous value of E is lust as shown in the flow chart for division
+algorithm.
+X
+(aE) mB
+flowchart for division algorithm
+Consider thatthe divisors 10001 and the dividend is 01110,
+Tap or
+
+--- Page 5 ---
+i
+
+Bag, -1 {woos
+aid! a
+‘Geatent in @: am 11010
+
+--- Page 6 ---
+Computer Organiavion and Archirerture
+Divide averftow
+the register. The overflow fp-lop DVT is setto 1 ifthe overflow occurs
+stop the opecation. When the overflow stops the operation of the system, then itis called
+
+thetic Operations un Busting Pu
+Tho rules apply to the singlo-precision TEEF standard format, These rules
+specify only the major steps needed tm perform the four operations. Intermediate
+results for both mantissas and exponents might require more than 24 and 0 bits,
+respectively & overflow or an underflow may occur. These and other aspects of the
+operations must be carefully considered in designing an arithmetic unit that meets the
+standard. If their exponents difer, the mantissas of Hoating-point numbers must be
+shifted with respect to each other before they are added or subtracted. Consider a
+decimal example in which we wish to add 2.9400 x 10° to 43100 x10*, we rewnte
+29400 x 10? as 0.0294 10° and then perform addition of tho mantissas to get 4.2394
+x10 the rule for adeition and subtraction can be stated as follows:
+Add /Subtract Rale
+‘The steps in addition (FA) ur subtraction (FS) of floating-point numbers (s1, e° , 11) fad{s2,
+2,2) ate as allows
+1 Unpack sign, exponent, and fraction fields. tlancle special operands such as zero,
+Infinity, or NaN(not a number}
+2.Shifethe significand af the number with the smaller exponent right by lel — €21 pies.
+2 Set the resulroyponent orto max(et.e?)
+4. ifthe instruction is FA and si s2 or ifthe instruction is (5 and si + s2 then add the
+signifcands; otherwise subtract ther
+
+Tap 8
+
+--- Page 7 ---
+Comparer Orgariation and Aroatecre
+5 Count the momber % of loading soma, A carry can make z= 1 Shift the reste
+significand efx bits or ight 1 hicif2 «1
+6. Rouind the result slgniicand, and shift right and adjust 2 if there te rounding overflow,
+which sa carryout ofthe leftmost digit upon rounding
+7. Adjust the result exponent by er = er - z, check for overflow or underflow, and pack
+the result sign, based exponent, an fraction bits into the result word
+Operamls Alignment Nocmalize and round
+14s x10? 0.06184 » 10 LMWH 108
+vogrsxiot 3975x108 +005_x10
+Pini tt Lo x 108
+‘Operands Alignment Normalize and round
+soeretu? —10T x007 230 «108
+Beth ~U.9987_ x 100 +0005» 100%
+0.0773. x 100" 770x100"
+‘BCD Adder;
+FCN adldor A A-hit inary adder that Is capable of adding two 4-hit words having a RCD
+(binary-coded decimal] format. The result of the addition is a BCD-format 4-bit output word,
+representing the decimal sum ofthe addend and augend, anda carry thats generated if this
+sum exceeds a decimal value of, Decimal aéition is thus possible using these devices.
+ii Ti
+al
+|
+
+--- Page 8 ---
+‘Computer Organization and Arcnitecnive
+
+unt (10 tecrures)
+
+‘THE MEMORY SYSTEM: Paste concepts, semiconductor RAM types of read - only memory
+(ROM), cache memory, performance eansidersttans, virtual memary, secondary storage, rald,
+direct memory access (DMA).
+
+Book: Carl Hamacher, Zvonks Vranesic, SafeaZaky (2002), Computer Organization, Sth
+edition, McGraw Hill: Unit-5 Pages: 292-366
+
+‘BASIC CONCEPTS OF MEMORY SYSTEM
+
+‘The maximum sive of the Main Mesnory (MM that van be used in any computer is
+determined by its addressing scheme, For example, x 16-bit computer that generates 16-bit
+addresses is capable of addressing upto 216 64K memory locations, Ia machine generates
+22-bit addresses, ft can access upto 2 = 4G momary lacations. This number represents the
+size of address space of the compute:
+
+IFthe smallest addvessable unit of information is a memary ward, the machine is called
+word-addressable. If individual memory bytes are assigned distinct addresses, the computer
+is called byte-addcesssble, Most of the commercial machines are byte addressable. For
+example in a byte-addressable 32-bit computer, each memory word contains 4 bytes. A
+possible word:-address assignment would be:
+
+War Address Byte Address
+
+0 0123
+
+4 4867
+
+a gaiott
+With the above structure a READ or WRITE may involve an entire memory word or it may
+involve only a byte. In the case of byte read, other bytes can also be read but ignored by the
+CPU. However, during a write cycle, the control circuitry of the MM must ensure that enly the
+specitied byte is altered. in this case, the higher-order 30 bits can specify the word and the
+lower-order 2 bits can specity the byte within the word.
+
+(¢PU-Main Memory Connection - A block schematic: -
+
+From the system standpoint, the Maia Memory (MM) unit can be viewed as a “block bux",
+Data transfer hetsioon CPI and MM takes place theough the use oFtwo CPU roglsters, usually
+called MAR (Memary Address Register) and MDR (Memory Dara Rogister). If MAR fs K bits
+Jong and MDRis‘n’ bits long then the MM unit may contain upto 2* addressable locations and
+
+--- Page 9 ---
+Computer Crganieavion and Archikertire
+cach location will he ‘nics wide, while the word lengyh sequal ta‘n irs uring a “memory
+cycle’ mits of data may he transferred hetwven the MM and CFI
+‘This transfer takes place over the processor bus, which has k address lines (address
+tous) data lines (data bus) and control lines like Read, Write, Memary Function completed
+(OFC), Bytes spectiers ete (control bus). For a read operation, the (HU loads the address into
+MAK, set READ to 1 and sets other control signals if required. The data ‘tom the MM is loaded
+into MDK and MMF is set to 1, For a write operation, MAK, MDK are suitably loaded by the
+(PU, write is se to Land other eontcol signalsare set suitably. Phe MM contel cireuitey loads
+the data into appropriate locations and sets MFC wo 1, This organization is shown in the
+following lock schematic
+Aes Bow hits)
+NAR ‘> ] Nai temory uso 2
+adirsable incon
+Dats bm bits)
+ce a ce
+PU |_—-_Comol Bus
+“Read, Write, SFC. Bye
+‘Specter te)
+Adress us (kits) Main Memory upro 2k addressable locations Word length =n bits Data
+bbus(n bits) Control Bus (Read, Write, MIC, Byte Specifier etc) MAR MDR CPU
+Some Basie Concepts
+Memory Access times Its a useful measure ofthe speed ofthe memory unt. tis the time
+thatelapses between the initiation ofan operation and the completion of that aperstion [or
+example, the time between READand MC)
+Memory Gyele Time = I isan important measure of the memory system Its Uhe enim
+time delay required herween che initiations of twa successive memary operations (for
+example, the time hetwicen rn sucerssive READ operations). The cycle rime Is usually
+slighty anger shan the access rime
+Random Access Memory (RAM):
+
+--- Page 10 ---
+‘Computer Organization and Arcnitecnive
+A memory unit Is ealled a Random Access Memory i any location can be accessed for a READ
+for WRITE operatian in some fixed amount of time thar Is indepenclont af the location's
+address, Main memory units aro of this rype. This distinguishes them fram serial or partly
+serial access storage devices such 25 magnetic tapes and disks which are used as the
+secondary storage device.
+Cache Memory:-
+‘The CPU of a computer can usually process instcuctions and data faster than they can be
+fetched from vomputibly priced main memory unit, Thus the memory eydle tine become the
+bottleneck in the system, One way tw reduce the memory access time is to use cache memory.
+“This {sa small and fast memory that is inserted between the large, slower main memory and
+the CPU, This halds the currently active segments af a program and its data. Recause af the
+locality af address roforences, the CPU can, mast ofthe rime, find the relevant information in
+the cache memory itself (cache hit) and infrequently needs access to the main memory (cache
+‘miss) with suitable size ofthe cache memory, cache hit rates of over 90% are possible leading
+to a cost-effective increase inthe performance ofthe system.
+‘Memory Interleaving:-
+‘his technique divides the memory system into a number of memory modules and arranges
+addressing so that suecessive words in the address space are placed in different modules
+When requests for memory access involve consecutive addresses, the access will be to
+Aifferont modules. Since parallel acoess to these modules (5 possible, the
+average rat af fotching words from the Mlain Memary can he increased,
+Virtual Memory: -
+1m a virtual memory System, the address generated by the CPU is referred to as a virwal or
+logical address. he corresponding physical address can be different and the required
+‘mapping is implemented by 3 special memory control unit, often called the memory
+‘management unit. The mapping function itself may be changed during program execution
+according to system requirements
+
+Because of the distinction made between the logical (virtual) address space and the
+phystoal address space; while the former can ho as largo as the addressing eapabilty af the
+CPU, the actual physteal memory can he much smaller. Qnly the active portion of the virtual
+address space is mapped ante the physical memory and the rest of the victual address space
+
+--- Page 11 ---
+‘Computer Organization and Arcnitecnive
+fs mapped onto che hulle storage device used. IF the addrossed information 46 in che Main
+‘Memary (MM), itis accossed and exceution proceeds.
+
+Otherwise, an exception is generated, in response to which the memory management
+unit transfers a contiguous block of words containing the desired word from the bulk storage
+unit to the MM, displacing some block that is curvently inactive. I the memory is managed in
+such a way that, such transfers are required relatively infrequency (ie the CPU will generally
+find the required information in the MM), the virtual memory system can provide a
+reasunably good performance and succeed in erzsting sn illusion ofa large memory with @
+sal, in expensive MM.
+
+Internal Organization of Semiconductor Memary Chips:
+
+Memary ehips are usually organized tn the form af an array af cells, in which cach coll is
+capable of storing one bit of information. A row of cells constitutes a memory word, and the
+cells of a raw are connected to a common line referred to as the word line, and this line is
+driven by the address decoder on the chip. The cells in each columa are
+connected to a sense /write circuit by two lines known as bit lines. The sense/wrte circuits
+are connected to the data input/output lines of the chip. During a READ operation, the
+Sense/Write vireuits sense, or ead, the information stored in the ells selected by a word line
+and transit this information tothe output lines. During a weite operation, they receive input
+information and store it in the cells ofthe selected word.
+
+“The Fallowing igure shaws such an organization of a mcmory chip consisting of 16 words of 8
+bits each, which is usually referred to as 2.16 x8 organization.
+
+‘The data input and the data output of each Sense/Write circuit are connected to a single bi-
+directional data line in order to reduce the number of pins required. One control line, the
+R/W (Read/Write) input is used a specify the required operation and another control line, the
+¢S (Chip Select) input is used to select a given chip in a_multichip
+‘memory system. This circuit requires 14 external connections, ané sllowing 2 pins for power
+supply and ground connections, can be manufactured in the form of 16-pin chip. Itcan store
+46x8= 128 bits, Another type of organization for Hk 1 format is shown below:
+
+--- Page 12 ---
+‘Computer Organ aon and Architect re
+THAR, a
+D ™
+2} 7
+f sane
+i rexel [EY
+2 es ee
+St
+BiohasAttes ee!
+Duane ete
+‘The 10-bit address is divided into two groups of § bits euch to form the row and column
+addresses for the ell urray. A row address selects a row of 32 cells, all uf which are accessed
+{nm parallel. One of these, solocted hy tho column address, is connected ta the external data
+Ines by the Input and output multiplexers. This structure can stare 1024 bits, ean he
+{Implemented ina 16-pin chip
+A Typical Memory Cell
+Semiconductor memories may be divided into bipolar and MOS types. They may be compared
+as follows:
+Charactedstic Bipolar MOS
+Power Dissipion Moe Less
+Bit Density Less Moe
+Tinea Towser Higher
+Speed More Less
+Bipolar Memory Call
+A typical blac storage cell is shown below
+= —k4
+Page 10
+
+--- Page 13 ---
+‘Computer Organization and Arcnitecnive
+
+“Two trancistor faverters enmnected ta implementa basic fip-lap. The cell fs eanmected ra anc
+word line and two bits lines as shawn. Normally the bit lines are kept at abou 1.6V, and the
+word line ts kept ata slightly higher voltage of abou 2.8V. Under these conditions, the rwe
+diodes D1 and D2 are reverse biased. Thus, because no current flows through the diodes, the
+cell is solated from the bit lines.
+
+Read Uperation:
+
+Let us assume the W1 on and QZ off represents a 1 to read the contents of = given cel, the
+voltage on the corresponding word line is reduced from 2.5 V to approximately 0.3 V. This
+causes one of the diodes D1 ur D2 to become forwaru-biased, depending un whether the
+transtster Q1 ar Q? 1s condueting. A a res, current flows fram bit Yin when the cells in
+the 1 state and From bit Hino b whow the cell Is tn the @ state. The Sense/Wiite clreulr at the
+fend of each patr af hir Hines monitors the current 0” lines bandh’ and sets the outpor bit Hine
+accordingly.
+
+Write Operation:
+
+While agiven row of bts is selected, thats, while the voltage on the corresponding word line
+4s O.3V, the cells can be individually forced to either the 1 state by applying.a positive voltage
+of about 3V to line bor to the U state by driving line b. This function is performed by the
+Sense/Write cireuit
+
+MOS Memory Cell
+
+MOS technology 1s used extensively in Main Memory Unics. As in tho case of bipolar
+momarics, many MOS cell canfiguestians are possible. The simplest of these Is a Mip-op
+circuit. Two transistors TI and 72 are connected to implement a flip-flop. Active pull-up to
+VCCis provided through T3 and T4. Transistors TS and TS act as switches that can be opened
+or closed under control ofthe word line. For a read operation, wher the cellis selected, I'S or
+1 is closed and the corresponding flow of current through b or b’ is sensed by the
+sense/write circuits to set the output bit line accordingly. For a write operation, the bit is
+selecied and a pasitive voltage is applied on the appropriate bit line, o store a O ur 1. This
+configuration is shown below:
+
+--- Page 14 ---
+‘Computer Organization and Arcnitecnive
+xe linieand windows NT.
+1b) -Mintcomputer: - A minicompurer 1s a medium-sized computer. That ‘5 more
+ppossorful than a microcomputer. Those computers are usually designed ra serve multiple
+users simultaneously (Parallel Processing). They are more expensive than microcomputers
+
+Examples: Digital Alpha, Sun Ultra
+
+(=)
+
+©) Mainframe (Enterprise) computers: - Computers with large storage capacities and
+very high speed of processing (compared tw mini- or microcomputers) are known as
+mainframe computers, They support a large number of terminls for simultaneuus use by a
+rmumber of users like ATM transactions. They are alsa used as central host computers in
+Atstrbuted data processing system.
+
+Fxamples:- IRM 370, 8/390,
+
+2
+- E
+
+4) Supercomputer: - Supercomputers have extremely large storage capacity and
+computing speeds which are many times faster than other computers. A supercomputer is
+‘measured in terms of tens of millions Instructions per secone (mips), an operation is made up
+fof numerous instructions. vhe supercomputer is mainly used for large scale numerical
+problems in scientific and engineering disciplines such as Weather analysis.
+
+Examples:- IBM Deep Blue
+
+--- Page 15 ---
+oo
+ar 4 5
+a5.
+oa] eee hed
+sd
+suctamsunuinemane
+cements cm nevenranan
+sc tre one
+oa men vieneestrn inten nem
+ottecnn nomen ranma ema
+rr pet ws nt
+See ib oo
+om names
+Drees arumunepnana ret ange
+et lemme nt
+crescents inert
+nro a
+semen sn ein toe rie eet or nd
+cre ti nn pd
+paneer eer careers
+conte ere
+jr,
+enn yep watnaon mae
+coven tutr ape rnem iy tn
+capacitor is above or below the threshold value. During such a Read, the charge on the
+cro er Si rk
+oe
+
+--- Page 16 ---
+=e
+ae
+ae
+EHP
+;
+Ts
+Ww
+xf
+ss
+an
+Os orem
+votnursinhimsn cenit
+sas lean
+2
+ving ana
+_. Js
+Seapets
+nnn enn
+selects the appropriate sense/write circuit. If the R/W signal indicates a Read operation, the
+coum A cae
+ae
+sonny
+emer area
+Suiuntncis tm
+ee
+naan
+Sir eaten erence
+ee
+Ee em a
+Sia
+=~
+
+--- Page 17 ---
+‘Computer Organization and Architectire
+
+Such black rransfors can he carried out typically at a rate thar ts double that for transfers
+involving random adéresses. Such a feature is useful when memary access fallow a regular
+pattern, for example, in a graphies terminal Recause of thelr high density and low cast,
+dynamic memories are widely used in the main memory units of computers. Commercially
+available chips range in size from Ik to 4M bits or more, and are available in various
+organizations like 64kx 1, 16k x4, IMB x 1 etc.
+
+RAID (Redundant Array of Independent Disks)
+
+RAID (redundant array of independent disks; originally redundant array of inexpensive
+disks) provides a way of storing the same data in different plaves (hus, ceduzuluntly) on
+multiple Luce disks (hough not all RAID levels provide wulundancy). By placing data om
+multiple disks, input/aurpur (1/0) opersstons can overlap in-a balanced way, Improving
+performance. Since multiple disks Inerease the moan time herween failures (MTRE), staring
+data redundantly also tnereases fault ralorance.
+
+RAID arrays appear to the operating system (0S) as a single logical hard disk. RAID
+employs the technique of disk mitvoring or disk striping, which involves partitioning each
+drive's storage space into units ranging from a sector (512 bytes) up to several megabytes.
+Ihe stripes of all the disks are interleaved and addressed in order
+
+In single-user syste where large records, such as medical or other scientific images,
+are stored, the stripes are typically set up to be small (pethaps 512 bytes) so that a single
+record spansall disks and can he accessed quickly by reading all disks at the samo time.
+
+Ina multi-user system, berter performance requires establishing a stripe wide enaugh to hold
+the typical or maximum size record. This allows overlapped disk /0 across drives.
+Standard RAID levels
+RAID WU: Tais configuration has striping but no redundancy of data. It offers the best
+performance butno fault+tolerance.
+
+Page 1a
+
+--- Page 18 ---
+‘Computer Organization and Architectire
+RAIDO
+RAID 4: Also knuwa as disk mirroring, this configuration consists of at least two drives Uhat
+duplicate the storaye of data. There is nu striping. Read performance is improved since eithe:
+disk can be read at the same time, Write perforcuance is the same as for single disk sturage.
+RaID1
+Mirroring
+BLOCK4 BLOCK1
+mLock? ly nlock=
+Blocks Blocks
+BLOCK 4 BLOCK 4
+ALD Z: This configuration uses striping across disks with some disks storing error checking
+and correcting (UC) information. It has no advantage over RAID 3 and isno longer used,
+RAID2
+RAID 3: This technique uses striping and dedicates one drive to storing parsty information,
+Ihe embedded ECU information is used to detect errors. Data recovery is accomplished by
+calculating the exclusive OK (XOR) of the information recorded on the other drives. Since an
+1/0 operation addresses all drives at the same time, RAID 3 cannot overlap 1/0. Fur this
+‘reason, RAID 3 is best for single-user systems with long record applications.
+Paget
+
+--- Page 19 ---
+‘Computer Organization and Architectire
+RAIDS
+Pary nse seh
+BALD 4: This level uses large stripes, which means you can read records from any single
+drive. This allows you to use overlapped 1/0 for read operations. Since all write operations
+have to update the parity drive, no 1/0 overlapping is possible, RAID 4 offers no acvantage
+over RAID 5.
+RAID4
+Block: [MN stocks? (MM otocKe2 BM eannnn
+BLOCK Gt J eLoGKc2 ( eLoon c2 BM monomer
+RAID 5: This level is bused on blucs-leve! striping with parity. The parity information is
+striped across each drive, allowing the array ty function even if one drive were to fail. The
+array’s architecture allows read and write operations to span multiple drives. This results in
+performance that is usually hotter than that of single drive, hut nat as high asthar afa RAID
+Garry. RAID § requires at Ieast three disks, bur It 1s aften recommended ta use at least five
+disks for performance reasons.
+
+RAID 5 arrays are generally considered to be a poor choice for use on write-intensive
+systems because of the performance impact associated with writing parity information, When
+a disk does fail, it can take a long time to rebuild a RAID 5 array. Performance is usually
+degraded during the rebuild time and the array is vulnerable to an additional disk failure until
+te rebuild is complete.
+
+Page tS
+
+--- Page 20 ---
+‘Computer Organization and Architectire
+RAIDS
+RAID 6; This technique is similar to RAID 5 but includes a second parity scheme that is
+distributed across the drives in the array. ‘Ihe use of additional parity allows the array to
+continue to function even if two disks fail simultaneously, However, this extra protection
+‘comes at a cost. RAID 6 arrays have a higher cust per gigabyte (GB) and often have slower
+write performance than RAID 5 arrays.
+RAIDE
+Lock At ML BLock x2 JM ntock x3 JM Lock ae BE LocK aa
+fea Geet Ge Go oe
+Direct Memory Access {DMA|
+DMA stands for "Direct Memory Acvess’ and is 2 method of transferring dats from
+the computer's RAM tu another part of the computer without provessing it using Une CPU,
+While most data that is input or vutput from your computer is processed by the CPU, some
+data does nat require processing, or can he praressed by another device.
+
+In these situations, DMA can save processing time and is a more efficient way to move
+data from the computer's memorv to other devices. In order for devices to use direct memory
+access, they must be assigned to a DMA channel. Each type of port on a computer has a set of
+DMA channels that can be assigned to each connected device. For example, a PCI controller
+and a hard drive controller each have their own set of DMA channels,
+
+Page te
+
+--- Page 21 ---
+‘Computer Organization and Arcnitecnive
+
+For example, a sound card may need to access dara stared fm the eamputer's RAM, bor since It
+can pracess the dats itself, t may use DMA ra hypass the CPII, Video cards thar support BMA
+cam also access the system memory and pracess graphics without needing the CPU. Ultra BVA
+hard drives use DMA to transfer data faster than previous hard drives that required the data
+to first be run through the CPU.
+
+An alternative to DMA is the Programmed laput/Output (PIU) interface in which all
+data transmitted between devices goes through the processor. A newer protocol for the
+ATALIDE interface is Ultra DMA, which provides a burst data transfer rate up to 33 mbps
+Hard drives that come with Ultra DMAL33 also support PIO modes 1, 3,and 4, and multiword
+DMA mode 2 at 16.6 mbps
+DMA Transfer Tunes
+Memory To Memory Transfer
+In chis mode block of data from one memory address is moved to another memory address
+1m chis mode current address register of channel 0 is used to point the source address and the
+current address register of channel is used to point the destination address in the first
+transfer cycle, data byte trom the source address is loaded in the temporary register of the
+DMA controller and in the next wransier cydle the dats fram the temporary register is stored
+in tie memory pointed by destination address,
+
+After cach data transfor current address registers are decremented or incremented
+according to current settings. The channel 1 current word cannt register Is also deoremonted
+by 1 alter cach data transfer. When the word count of channel 1 goes to FTFFII, a TC is
+generated which activates EOP output terminating the DMA service
+Auto initialize
+1m this mode, during the initialization the base address and word count registers are loaded
+simultaneously with the current address and word count registers by the microprocessor.
+The address ond the count in the base registers remain unchanged throughout che DMA
+
+Aller the first bluck transfer ie, after the aetivation of the BOP signal, the original
+values of the current address and current word count rogistors are automatically restored
+from che base address and base word count register of that channel. After ata intlaliration
+the channel is ready to perform another DMA service, without CPU intervention
+
+--- Page 23 ---
+‘Computer Organization and Architectire
+‘they worl: hy asking for the use af tho CPI by sending the interrupt to which the CPI
+responds
+Nove: In arder ta save time the CPU daes not check {fit hasta respond
++= Interrupts are used when a task has to be performed immediately
+Polling
+Polling requires the CPU to actively monitor the process
+‘The major advantage i that the polling can be adjusted to the needs ofthe device
++ polling is alow level prucess since the peripheral device is not in need ofa quick response
+UNIT-V (20 Lectures)
+Paget
+
+--- Page 24 ---
+‘Computer Organization and Architectire
+
+MULTIPROCESSORS: Characteristics af multipeacessars, inrerconnectian structures, Inter
+processor arbitration, inter processor communicarton and synchronization, cache coherence,
+shared memory multipracessars
+
+Book: M. Moris Mano (2006), Computer System Architecture, 3rd edition, Pearson/PHI,
+India: Unit-13 Pages: 489-514
+
+Characteristics of Multiprocessors
+
+A multiprocessor system is an interconnection of two or more L?U, with memory and
+input-output equipment, As defined earlier, multiprocessurs ean be put under MIMD
+category. The tera multiprocessor is sometimes confused with the wer multi computers
+‘Though ath support cancurront operations, there is an Important difference between a
+system with multiple computers and a system with multiple processors.
+
+In a multi computers system, there are multiple computers, with their own operating
+systems, which communicate with each other, if needed, through communication links. A
+‘multiprocessor system, on the other hand, is controlled by a single operating system, which
+coordinate the activities of the various processors, either through shared memory or inter
+processor messages.
+
+‘The advantages of multiprocessor systems are:
+“Increased reliability because of redundancy in processors
+
+Increased thranghpur because of executian of mulsiple jobs in parallel portions of the
+‘same jab in paralle!
+A single job can be divided into independent tasks, either manually by the programmer, or by
+the compiler, which finds the portions of the program that are data independent, and can be
+‘executed in parallel, The multiprocessors are further classified into two groups depending on
+the way their memory is organized. The processors with shared memory are called tightly
+coupled or shared memory processors.
+
+‘The information in these processors is shared through the cosumon memory. Bach of
+the pracessars can also have thetr lacal memory tao. The other class af moltipracessors 3
+loosely coupled or distributed memory multl-processars. In this, each pracessar has their
+‘own private memory, and they share Information with cach ather through intereannection
+switching scheme or message passing
+
+Page ran
+
+--- Page 25 ---
+‘Computer Organization and Arcnitecnive
+lassitication based on number of microprocessors
+Based un the number of microprocessors, computers tan be classified inte
+
+a) Sequential computers an
+
+bh) Parallel computers
+a) Sequential eamputers:- Any task camplote in soquentia! computers {swith ane
+microcomputer only. Mast af the camputors (today) we see are sequential campurees where
+in any task s completed sequentially instruction after instruction from the beginning to the
+end.
+b) Parallel computers: - The parallel computer is relatively fast. New types of computers
+that use a large number of processors, The processors pertorm different tasks indepenéently
+and simultaneously thus improving the speed of execution of complex programs dramatically
+Parallel computers mateh the speed of supercomputers at a fruction of the cost
+assificati '
+
+A binary digit Is called "RET". & word ‘5 a group of hits which is Axed for a computer
+
+‘The numbor af bits in a word (a ward length) devermines tho representation ofall characters
+in these many bits. Word length les in the range from 16-bit to G4-btsf or most computers of
+today.
+
+--- Page 26 ---
+‘Computer Organization and Arcnitecnive
+
+‘The principal characterisite of a multipracessar ‘5 its ability to share a sot of main
+rmomary and some 1/0 deviers. This sharing Is passtale through same physteal conneestans
+between them called the interconnection structures.
+
+Inter processor Arbitration
+
+Computer system needs buses to facilitate the transfer of information between its
+various components. For example, even in a uniprocessor system, if the CPU has to access a
+memory location, it sends the address of the memory location on the address bus. This
+address uctivates a memory chip. The CPU then sends a red signal through the control bus, in
+the response af which the memary putstho dara an the address bs.
+
+‘This address activates a memary chip. The CPU then sonds a read signal through the
+control bus, in the response af which the memory puts the data on the data bus. Similaely, in a
+multiprocessor system, if any processor has to read a memory location from the shared areas,
+it ollows the similar routine
+
+‘Where are buses that transfer data between the CPUs and memory. These are called
+memory buses. An 1/0 bus is used to transfer data to and from input and output devices. A
+bus that connects major components in 3 multiprocessor system, such as CPUs, 1/0s, and
+‘memory is alled system bus. A processor, in a mulliprocessur system, requests the access of
+a component through the system bus
+
+Jn case there is no processor accessing the bus at that time, itis given then contro! of,
+the bus immediately. If there is a second processor utilizing the bus, then this processor has
+to wait for the bus to be freed. Ifat any time, there is request for the services of the bus by
+‘more than one process, then the arbitration is performed to resolve the conllict. A bus
+controller is placed between the local bus and she system bus to handle this
+Inter processor Communication and Synchronization
+1a multiprocessor system, it becomes very nevessury, that there be proper communication
+protocol hetween the various processars. In a shared memary multiprocessar system, a
+common area in the memory 1s provided, In wich all the messages thar need ra he
+communicated fa other processors ate writen,
+
+--- Page 27 ---
+‘Computer Organization and Arcnitecnive
+
+2 proper synchronlantion 1s also nocded whenever there Is a race of two oF more
+[processors far shared resources like 1/0 resaurees. The aporating system in this case is given
+the tack of allocating the resaures to the various pracessars in a way, thar at any time nat
+‘more than ane processor use the resource
+
+A very common problem thst can occur when two or more resources are trying to
+access a resource which can be modified, For example processor 2 and 2 are simultaneously
+trying to access memory location 100. Say the processor 1 is writing on tothe location while
+processur 2 is reading it, The chances are that processor 2 will end up reading erroneous
+data, Such ind of resuurees which need to be protected from simultaneous access of more
+than anc pracessars are called critical sections. The fallowing assumptions are made
+rogarding the evtical secrions
+- Mutual exclusion: At most ane processar can he ina eriteal section at atime
+“Termination : The ertical section is executed ina finite time
+«Tole scheduling: A process attempting to enter the eritical section will eventually do so ina
+finite time.
+
+Abinary value called a semaphore is usually used to indicate whether 3 processor is currently
+Executing the critical section.
+Cache Coherence
+
+As discussed in unit 2, cache memories are high speed buffers which are inserted
+Iherween the pracessar and the main memory t0 capture those partians of the contents of
+main memary which are currently in use. Those memories are five ro ten times faster than
+‘main memories, and therefore, reduce the overall access time. In a multipracessor system,
+with shared memory, each processor has its own set of private cache.
+
+Multiple copies of the cache are provided with each processor to reduce the access
+time, Each processor, whenever accesses the shared memory, also upéates its private cache.
+‘his introduced the problem of cache coherence, which may result in data inconsistency: ‘That
+fs, several copies of the same dats may eaist in different caches at any given time.
+For example, er us assume there are two processors x and y. Rath have the same copy af the
+ache. Processor x, produces data 'a' which fs ro he consumed by processor y. Pracessar
+update the value of’ fs awn private copy af the cache. As ir daes nor have any access to
+
+--- Page 28 ---
+‘Computer Organization and Architectire
+the private copy af eache af pracessar y, the processor y cantinues ra use the vartable a! with
+‘ald valve, unless itis Informed af the change.
+
+‘Thus, in such kind of situations ifthe system is to perform correctly, every updation in
+the cache should be informed to all che processors, so that they can make necessary changes
+in their private copies of the cache.
+
+ovr kf ener KW owe
+Page 123
+
+--- Page 29 ---
+Computer Organiavion and Archirerture
+=
+9S
+wm fi
+‘Classification based on number of users
+‘Single User: - Only one user can use the resource ut any time.
+Rap Ne
+seat see
+ae
+
+--- Page 30 ---
+‘Computer Organization and Arcnitecnive
+ee
+te
+COMPUTER TYPES
+2 computer ean be defined as a fast clectrante calculating machine that acoeprs the
+(data) digitized tnpur information process ir as por the list af tntornally stored instructions
+and produces the resulting information. List of instructions are called programs & internal
+storage is called computer memory
+‘he different types of computers are
+4. Personal computers: - This is the most common type found in homes, schools,
+Business offices etc, It is the must common type of desk top computers with
+processing and storage units alung with various input and output deviees
+2. Note book computers: -These are compact and portable versions of PC
+2. Work statlans: - These have high resolution input/ewtpur (1/0) graphies capability,
+bur with same dimonsians as chat of desktop computer. These are used In engineering
+applications af interactive design work.
+4. Enterprise systems: - These are used for business data processing in medium to large
+corporations that require much more computing power and storage capacity than
+‘work stations. Internet associated with servers have become a dominant worldwide
+source of al types of intormation.
+5, Super computers: - hese are used for large scale numerical calculations required in
+the upplications like weather forecasting ete.
+
+--- Page 31 ---
+‘Computer Organization and Arcnitecnive
+BASIC TERMINOLOGY
+stnput: Wharewer Is porinta s compurcr system.
+sata: Refers to the symbols that represent acts, cbjects, o ideas.
+‘Information: Tae results of the computer storing data as bits and bytes; the words, umbers,
+sounds, and graphics
+Output: Consisis ofthe processing results produced by a computer:
+Processing: Manipulation of the data in may ways.
+Memory: Area of the computer that temporarily halds data waiting to be processed, stored,
+or output.
+Storage: Area of the computer that holds data om a permanent basis when it is not
+mmodiately needed for processing,
+sAscemly language program (ALP) -Programs are wrltren using mnemonics
++Mmemanio Instruction will he inthe form of English lke farm
+‘Assembler -is a software which converts ALP to MLL (Machine Level Language)
+SILL (BLigh Level Language) -Programs ace written using English like statements
+‘Compiles Convert IILL to MLL, does this job by reading source program at ance
+“Interpreter ~Uonverts KLL to MLL, does this job statement by ststement
+‘System software -Program routines which aié the user in the execution of programs eg:
+Assemblers, Compilers
+Operating system -Collection of routines responsible for controlling and coordinating all
+shectivties in a computer system
+Computers has twa kinds of components:
+Hardware, consisting ofits physical devices (CPU, memory, bus, storage devices, .)
+Software, consisting of the programs ithas (Operating system, applications, tities, .)
+UNCHIONAL UNIT
+
+A computer consists of five functionally independent main parts input, memory,
+arithmetic logic unit (ALU), output and control unt.
+
+--- Page 32 ---
+‘Computer Organization and Arcnitecnive
+apt ALE
+10 Processor
+Memory
+Ouiput Control Unit
+Functional units of computer
+Inpur dovice acceprs the ended information as source program te. high leve
+language. This 1s elther stared in the memory ar immediately used by the pracessar to
+perform the desired operations. The program stored in the memory determines the
+processing steps. Basically the computer converts one saurce program to an object progeam.
+1.einto machine language
+nally the results are sent to the outside world through output device. All of these
+actions are coordinated by the control unit
+Block diagram of computer
+ocr
+Input unit:-
+Page 7
+
+--- Page 33 ---
+‘Computer Organization and Architectire
+
+‘The source program high level language program/caded information /stmply data Is
+fod ta.a computer through Input devices keyboard {s a most common type. Whenever a key Is
+pressed, ane enrresponding ward or number 1s translated into tts equivalent binary cade
+over a cable & fed either to memory or processor.
+
+joysticks, trackballs, mouse, scanners etc are other input devices.
+‘Memory unit: =
+lis function into store programs and data [is basically to two types
+
+1. Primary memory
+
+2. Secondary memory
+
+Word:
+In computer architecture, a word is a unit of data of a defined bitlength that can be addressed
+and moved between storage and the computer processor. Usually, the defined bit length of a
+‘word is equivalent to the width of the computer's data bus so that a word can be moved in a
+single operation from storage to a processor register. For any computer architecture with an
+eight-bit byte, the word will be some multiple of eight bits. in IBM's evolutionary
+System/360 architecture, a word is 32 bits, or four contiguous eight-bit bytes. In Intel's PC
+processur architecture, « word is 16 bits, or two contiguous vight-bit bywes: A word can
+contsin & computer instiuctiua, a storage address, ur application data hut is te be
+‘manipulated (for example, added to the data in anather word space).
+
+‘The number of bits in each word is known as word length. Word length refers to the
+number of bits processed by the CPU in one go. With modern general purpose computers,
+word size can be 16 bits to 64 bits.
+
+“Vhe time required to access one word is called the memory access time. Ihe small, fast,
+‘RAM units are called caches. ‘They are tightly coupled with the processor and are often
+contained on the same IC chip to achieve high performance.
+
+Page 1
+
+--- Page 34 ---
+Computer Organiavion and Archirerture
+
+FINARY WEMCRY ‘SECONDARY HEMCRY
+
+(NTERNAL MEMORY {EXTERNAL MOOR?)
+
+Bea
+=a Lescata)
+Roo
+
+1. Primary memory: «Is the one exclusively associated with the processor and operates at
+the electronics speeds programs must be stored in this memory while they are being
+executed, The memory contains a large number of semiconductors storage cells. Hach
+capable of storing one bit of information. These are processed in a group of fixed site called
+word
+
+To provide easy aucess tw a word in memory, a uistinet address is associated with
+each word location, Addresses are numbers tht identify memory location.
+
+Number of bits in ach word i called wnrd lengrh ofthe compurer. Programs rust
+reside in the memory during execution. Instructions and data can be written into the
+memory or read out under the control of processor. Memory in which any location can be
+reached na short and fixed amount of time after specifying its address is called randome
+access memory (KAM).
+
+“The time required to access one word in called memory access time. Memory which is
+aly readable by the user and contents of which cat be altered is called cead nly mesnory
+(ROM) it contains operating system.
+
+Paget
+
+--- Page 35 ---
+‘Computer Organization and Architectire
+
+Caches are the small fast RAM units, which arc coupled with the processar and arc
+‘often cantatned on the same IC chip to achieve high performance. Although primary storage
+tg essential tt rendsto be expensive
+2 Secondary memory: «Is used where large amounts of data & programs have to be stored,
+particularly information thatis accessed infrequently.
+
+Examples: - Magnetic disks & tapes, optical disks (ie CD-RUM's), floppies etc.
+Arithmetic logic unit (ALU):
+
+Most of the computer operators are executed in ALU of the provessur like additiva,
+subiruction, division, multiplication, ets. the uperands are brought imto Ue ALU from
+memory and stared in high speod storage slements ealled register. Then accarding to the
+Instructions the operation is performed in the required sequence.
+
+‘The control and the ALU are may times faster than other devices connected to 2
+computer system. This enables a single processor to control a number of external devices
+such as key boards, displays, magnetic and optical disks, sensors and other mechanical
+conwollers.
+
+‘Output unit»
+
+‘These actually are the counterparts of input uail. [ts busic function is to send the
+processed results to the outside world.
+Fxamples:- Printer, speakers, monitor eve.
+Control unit:-
+
+It effectively is the nerve center that sends signals to other units and senses their
+states. The actual timing signals that govern the wansfer of data between input unit,
+processor, memory an¢ output unit are generated by the control unit.
+
+BASIC OPERATIONAL CONCEPTS
+Page 20
+
+--- Page 36 ---
+Comparer Organaation and Archnortire
+Nowe Computer architecture (a
+bften called microarchitecture (ow level ee ear
+Programmes view (Le
+‘Transparent from programmer (ex.a programmer does | proBrammes pee (oe
+aot worry much how addition is implemented i rere De
+pol sig aware af whid instruction
+set used)
+Physical components (Circuit design Adéers, Sis Nagle (nstrtion 9%
+Perko en oem design Aaders SIRNA, Adrassing modes, Data
+types, Cache optimization
+low todo ? (implementation ofthe architecture) Ss eta Orton
+GENERATIONS OF A COMPUTER
+Generation in computer terminology is a change in technology 2 computer is/was being
+used. Initially, the generation term was used to distinguish between varying hardware
+technologies. Bur nowadays, generation includes both hardware and software, which
+together make up an entire computer system.
+there are totally five computer genezations Known ull date, Each generation has been
+Aiscussed in detuil along with ther tine period and characteristics, Here approsime dates
+against each generations have bevs mentioned which are normally cepted
+Following ae Uie main five yenerations ofeomputers
+SN. Generation & Description
+1 First Generation
+‘The period a rt gencraton: 1946-199. Varuum tube hased
+Second Generation
+2 The period of second generation: 1959-1965. Transistorbased.
+4 Third Generation
+‘The period of third generation: 1965-1971. Integrated Cicuitbased.
+4 Fourth Generation
+‘The period o [ourth generation: 2971-1940. VLSI microprocessor based
+= Fifth Generation
+* The period of Sith generation: 1NuU-onwards. ULSI microprocessor based
+Hirst. gonecatian
+Tes
+
+--- Page 37 ---
+‘Computer Organization and Architectire
+‘To perform a given taskean appropriate program consisting ofa ist of instructions Is stared
+{in the memory. Individual insteuetions aro brought from the momary Inta the pracessor,
+‘which executes the specified operations. Data to be stored are also stored in the memory.
+Examples: - Add LOCA, Ry
+‘This instruction adds the operand at memory location LUCA, to operand in register Re
+{& places the sum into register. his instruction requires the performance of several steps,
+41. First the instruction is fetched from the memory into the processur.
+2. The operand at LOCA is fetcited and added to tie contents uf Ro
+2. Finally the resulting sum is stored In the register Re
+‘Tho preceding add instruction combines a memory access aporatian with an ALI
+‘Operations. In some other type of computers, these two types of operations are performed by
+‘separate instructions for performance reasons.
+Load LOCA, RI
+Add RI, RO
+‘Transfers between the memory and the processur are staried by sending te address
+of Uie memury location to be accessed to the memory unit and issuing the appropriate control
+signals, The data ure then transferred to ur from the memory,
+‘ite yh Cewrt een fe remer de ney shwsibew-memoey'é
+Page 2
+
+--- Page 38 ---
+‘Computer Organization and Architectire
+
+the processar ean he connected. In addition ta the Al.II& the control elreuitry, the pracessor
+contains a number af registers used for several different purpases.
+
+Register:
+
+It is a special, high-speed storage area within the CPU, All data must be represented in
+a register before it can be processed. For example, if wo numbers are to be :uultiplied, both
+‘numbers must be in registers, and the result is also placed in a register. (The register can
+contain the address of 2 memory location where data isstored rather than the actual data
+itself)
+
+‘Vhe number of registers that 2 CU has and the size of each (number of bits) help
+determine the power and speed af a CPU. For example a 32-bit CPH ts one In which cach
+register is 32 bits wide. Therefore, each CPU instruction can manipulate 3Z bits of
+data, In high-level languages, the campller {s respansible for translating high-lovel operatians
+into low-level operations that access registers.
+
+Instruction Format:
+BASIC COMPUTER INSTRUCTIONS
+= Basic Computer Instruction Format
+
+Momory-Reterence Instructions (OP-code = 000 110)
+
+Ragsterfoterence metrustione (OP. code = 111,1=0)
+
+Input-Output intmctions (OP coda =t84,1= 1)
+Computer instructions are the basic components of a machine language program. They are
+also Known as macro operations, since each one is comprised of sequences of micro
+operations
+‘Each instruction initiates a sequence of micro operations that fetch operands ‘rom registers
+‘or memory, possibly perform arithmetic, logic, or shift operations, and store results in
+registers or memory.
+
+Page 22
+
+--- Page 39 ---
+‘Computer Organ aon and Architect re
+Instructions are enraded as binary instruction cades. Rach instruettan code eomtins of|
+a operation cade, or reds, which designates the averall purpose ofthe instruction (eg, add,
+subtract, mave, Input, ete). The number af bits allocated for the opende determined how
+many different instructions the architecture suppor
+Im addition te the opcode, many instructions also contain one oF more operands, which
+indicate where in registers or memory the data required tor the operation is located. For
+‘example, and sdd instruction requires two operands, and a not instruction requires one.
+wu 65
+[Opevde| Operand | Operand |
+The pode and operands are most aften encoded as unsigned binary numbers in order to
+‘minimize che number of bits used to store them. Tor example, a 4-bit opcode encoded as a
+binary number could represent up to 16 different operations
+‘The contre! unitis responsible for decoding the opcode and operand bits in the instruction
+register, and then generating the control signals necessary to drive all other hardware in the
+(CPU to perform the sequence of micro operations that comprise the instruction
+omen
+( START )
+[Bisee tie marten] Execution cyte
+ea)
+Tages
+
+--- Page 40 ---
+=e
+fa ta namo
+ae
+¢ - Execute {ronhed
+oS Se
+=
+HALT)
+ae
+fake herr
+“knitter
+coihravnmams
+——
+Fee ests toed
+contenant
+sence
+oe nein cus
+1. MAR - (Memory Address Register):- It holds the address of the location to be
+2. MDR - (Memory Data Register):- It contains the data to be written into ur read out
+mn
+—
+Encounter
+ar marerari core tt yo
+on
+se ce eeninrininrd ncn
+os
+=
+
+--- Page 41 ---
+‘Computer Organization and Arcnitecnive
+
+4 Aftor tho time required ra access the memary clapses, the address word is read aur of
+the memory and loaded Inco the MDR
+
+5. Naw contents of MDR aro transferred ta che IR Ze naw the instruction ts ready ra he
+decoded and executed.
+
+6. If the instruction involves an operation by the ALU, it is necessary to obtain the
+required operands
+
+7, Am operand in the memory is fetched by sending its address to MAR & Initiating a
+vead evele
+
+8 When the operand has been reud from the merury w the MDR, i is transferred from
+MDRto the ALU.
+
+©. Aftor one artwo such repeated cycles, the ALI can porfarm the desired operation,
+
+10,1F the result af ths aperattan 15 t0 be stored inthe memory, the result fs sont to MDR.
+
+11. Address oF location whore the result & stared (5 sent ro MAR & a write eyela is
+saitiated,
+
+412. The contents of PC are incremented so that PC points to the next instruction that is to
+be executed.
+
+Normal execution ofa program may be preempted (temporarily interrupted) if some
+evives require urgent servicing, to do this one device raises an Interrupt signal. An interrupt
+is a request signal from an 1/0 device for service by the processur. The processur provides
+the requested service by executing an appropriate interrupt service routine,
+
+‘The Diversion may change the internal stage af the pracessar its stato must he saved
+1 the memory location before interruption. When the interrupt-routine service is completed
+the state ofthe pracessor is restored so that the intervupted program may continue
+The task of entering and altering programs for the ENIAC was extremely tedious, The
+programming process can be eusy if the program cuuld be represented in a form suitable for
+storing In memory alongside the data. Then, a computer could get its instructions by reading
+thom from momary, and a program could he sor ar altered by sorting the values ofa portion af
+rmomary. This Idea Is known a the stored-peagram concept. The fest publicattan of the tdea
+
+--- Page 42 ---
+‘Computer Organ aon and Architect re
+was na 1945 proposal hy von Neumann fora new computer, the NVAG (leer Miscrete
+Variable Compuer).
+
+Jn 1946, von Neumann and his colleagues began the design of a new stored-program
+computer, referred to as the IAS compute:, at the Princeton Institute for Advanced Studies
+the 148 computer, although not completed until 192, is the prototype of all subsequent
+general-purpose computers.
+
+Central Hrocessing Unit (CPU)
+‘Aithmetic
+Input Unit Main
+Output Memory
+Equipment
+Program
+Control Unit
+Figure : General structure of Von Neumann Architecture
+Weonsists of
+& Aman momory, which stares hoth data and instruction
+4 Anarlthmerie and logle uni (AL) capable af operatingaon binary dara
+4 A. control unit, which interprets the instructions in memory and causes them to be
+executed
+4 Input and outgut (1/0) equipment aperated by the control unit
+BUS STRUCTURES:
+Bus structure und multiple bus structures are types of bus or computing. A bus is basically a
+subsystem which transfers data herween the compancnts of Computer components etther
+within a computer or between two computers. Ir cannecrs peripheral devices at the same
+ime.
+Tage te
+
+--- Page 43 ---
+‘Computer Organ aon and Architect re
+
+A multiple Bus Structure has multiple interconnected service integration buses and for each
+tus the othr buses ar its foreign buses. A Single bus structure (s very simple and eonststs of
+a single server.
+
+= A bus cannot span multiple cells. And each cell can have more than one buses. - Published
+‘messages are printed om it.'There is no messaging engine on Single bus structure
+
+1) In single bus structure all units are connected in the same bus than connecting different
+Dbuses us multiple bus structure
+
+Ti) Multiple bus structure's performance is better than single bus structure. lii)single bus
+structure's costs cheap than muliple bus structure
+
+Group of lines that serve as connecting path for several devices ts ealled a bus (one bit per
+line)
+
+Individual parts must communicate over 2 communication line or path for exchanging
+data, addcess and control information as shown in the diagram below. Printer example -
+processor to printer. A common approach is to use the concept of butler registers to hold the
+content during the transter
+
+INPUT. OUTPUT. MEMORY | PROCESSOR
+‘SYSTEM BUS
+Figue 5: Single bus structure
+uifer registers hold the data during the data transfer termporanly. Ex: printing
+Types of Buses:
+4. Data Bus:
+Data bus is the most common type of bus. It is used to transter data between different
+components of computer. The number of lies in data bus affects the speed of data transfer
+between different components. The data bus consists of 8, 16, 32, ur 64 lines. A 64-line data
+dbus can transfer 6 bits of data at one time,
+Tage 27
+
+--- Page 44 ---
+‘Computer Organization and Arcnitecnive
+
+“The data hus ines aro bi-divectional. le means that:
+
+(CPU can road data from memary using these lines CPU can write data to memary lnesttans
+using these lines
+
+2. Address Bus:
+
+‘Many components are connected to one anather through buses. kach component is assigned a
+‘unique 1D. ‘This Wis called the address of that component It a component wants to
+communicate with anather component, it uses address bus to specify the address of that
+component, The aduress bus is 2 unidirectional bus. It can curry information only in one
+direction, Ik carries address of memory location from microprocessor tothe main memory
+
+3. Control Bus:
+
+Control bus fs used ta transmit different commands ar contral signals fram ane component te
+another component Suppose CPU wants to read data from main memory. It will use control is
+also used to transmit control signals like ASKS (Acknowledgement signals) 4 control signal
+contains the following
+
+4 Timing information: It specities the time for which a device can use data and adidress bus.
+2 Command Signal: It specities the type of operation to be performed.
+Suppose that CPU gives a command to che main memory to write data, The memory sends
+acknowledgement signal to CPU after writing the data suecessfully CPU receives the signal
+and then moves to perform sume uther action
+
+SOFTWARE
+
+fa user wants t0 enter and vin an application program, he/she neces » System Software
+System Software is 2 collection of programs that are executed as needed to perform functions
+such as
+
++ Receiving and interpreting user commands
+
++ Entering snd editing application programs and storing then as files in secondary storage
+devives
+
++ Running standard application programs such as word processors, spread sheets, games
+Operating system - Is key system software companont which helps the user to expat the
+below underlying hardware with the programs
+
+--- Page 45 ---
+‘Computer Organization and Arcnitecnive
+‘Types af sofware
+A layer strucrure shawing where Operating System Is located on generally used software
+ystems on desktops
+System software
+System sofware helps run the computer hardware and computer system. It includes a
+combination ofthe following:
+
++ devicedrivers
+
++ oporating systoms
+
++ utilities
+
++ windowing systems
+
++ compilers
+
+# debuggers
+
++ interpreters
+
++ linkers
+‘The purpose of systems software isto unburden the applications programmer from the often
+complex details of the particular computer being used, including such aceessories as
+communications devices, printers, device readers, displays and keyboards, und alsv to
+partition the computer's resources such as mnemory and pracessor time in a safe anu stable
+‘manner. Fearnples are- Windows XP, Linux and Mac.
+Application software
+Application software allovis end users to accomplish ane oF more specific (not directly
+computer development related) tasks. Typical applications include:
+© business software
+© computer games
+© quantum chemistry ane solid state physics software
+B telecommunicatios (ie, Une internet snd everything Ural ows an it)
+Bdatabases
+B educational suftware
+B medical softwere
+B military software
+
+--- Page 46 ---
+MET
+B neeclarmecingsofoere
+© mage eating
+B spreadshet
+2 sultion software
+2 Word processing
+PERFORMANCE
+vere programs. The peed with which a compute exces program i affetet hythe
+design of ts harware For beat perfomance i ecesay #0 design the comple, the
+tnachine instruction ead th ardwarein a coordinated way.
+The total sme requed to eeete the propram i lapsed imei a measure of the
+Indl machine isruetins Ts hardunte eames the proven andthe memory
+= cote oconer
+Memory Memory
+AL” bu 4 NK
+< >
+. /
+The perient pars ofthe A © are repeated Ini which Incloes the exehe
+
+--- Page 47 ---
+Comparer Organization and Architeerre
+The period of frst generation was 1946-1950. The computers of fist gonoratinn used
+kum mbes. as the haste camponont fr memary and ercultry far CPU (Central Penenssing
+Unt). These tubes, like cere hulhs, produced lot of heat and were prone to frequent
+fusing ofthe installations, therefore, were very expensive and could be afforded only by very
+large organizations. In this generation mainly batch processing operating system were used
+Punched cards, paper tape, and magnetic tape were used as input and output devices. the
+a aS
+az SNe Se
+wt | te? —
+eS eas ie
+The main features of est generation are:
++ Unreliable
++ Supported machine language only
++ Very costly
++ Generated lot of heat
++ Neud of AC
++ Noo-poriable
++ Consumed lat of elctrtcity
+Some omputers of this gencration were
++ FAC
++ EDVAC
++ univac
++ ee702
++ 1sne6s0
+Page|
+
+--- Page 48 ---
+‘Computer Organization and Arcnitecnive
+
+Lor us examine the flaw af program Instructions and data between the memory and
+the processor. At che start of execution, all program instructions and the required data are
+stored in the main memory. As tho exccutlan praceeds, Insmmuctians are forched ane by anc
+‘over the bus into the processer, and a copy is placed in the cache later ifthe same instruction
+co data item is needed a second time, itis read directly from the cache
+
+‘The processor and relatively small cache memory can be fabricated on a single IU
+chip. Ihe internal speed of performing the basic steps of instruction processing on chip is
+‘very high andl is considerably fuster than the speed at which the instcuetion and data ean be
+feiched from tie main memory. A program will be executed faster if the muverent of
+instructions and data herween the main memory and the pracesar is minimizc, which Is
+achioved by using the cache.
+For example: Suppose a number of instructions are executed repeatedly over a short period
+‘oftime as happens ina program loop. Ifthese instructions are available in the cache, they can
+be fetched quickly during the period of repeated use. The same applies to the data that are
+used repeatedly,
+Processor clock: +
+
+Processor circuits are controlled by timing signal called duck. The dock designer
+the regular time intervals called clock eyeles. To execute a machine instruction the processor
+‘ivldes the ction to he perfarmed inca a sequence af baste steps that each step can he
+campleted in ane clock cyele. The length P of one clack eycle s an important paramerer that
+affects the processor performance.
+
+Processor used in today’s personal computer and work station have a clock rates that
+range from a few hundred million to aver abillion cycles per second.
+Basic performance eyuation
+
+‘We now focus on attention an the pracessar time component af the toral elapsed
+time. Let 'T he the processor time required to execute a program that has been prepared in
+some high-level language The compiler generates a machine language object program that
+
+--- Page 49 ---
+‘Computer Organization and Architectire
+
+‘corresponds ta the source program. Assume that camplere exccortan ofthe pragram requires
+the execution af N machine eyele language instructions. The number N is the actual number
+fof instruction execution and (5 not necessarily equal to the number af machine eycle
+instructions in the object program. Some instruction may be executed more than once, which
+in the case for instructions inside a program loop others may not be executed all, depending
+‘on the input data used.
+
+Suppose that the average number of basic steps needed to execute one machine cycle
+instruction is S, where each busic step is completed in one cluck eycle, If luck rate is “R
+yds per second, the program execution times given by
+
+TeN*S/R
+this is often referred ra as the haste performance equation.
+
+‘We must emphasize that N, 5 & Rare not independent parameters changing one may
+affect another. Introducing a new feature in the design of 2 processor will lead to improved
+performance only ifthe overall result is to reduce the value of T
+Pipelining and super scalar operation: -
+
+‘We assume that instructions are executed one ufler the uther. Hence the value ufS is
+the total number of basic steps, or clock eycles, required to execute one instruction.
+substantial improvement in performance can be achieved by overlapping the executiva of
+successive instructions using a technique called pipelining
+
+Consider Add Rs Re Re
+‘This adds the contents of Ri & Ry and places the sum into Re.
+
+‘The contents of Ri & Ry are first transferred to the inputs of ALU, After the adéitior
+‘operation is performed, the sum is transferred to Ry. The processor can read the next
+instruction from the memory, while the addition operation is being performed. Then of that
+instruction alsu uses, the ALD, ils operand can be transferred to the ALU inputs at the same
+time that the add instructions is being transferred tu Re.
+
+Im the Ideal case If all Instructions are overlapped ta the maximum degree possthle
+the execution praceeds at the rate of one Instruction completed in cach clack eyele
+
+Page 32
+
+--- Page 50 ---
+‘Computer Organization and Arcnitecnive
+Individual instructions stil require several clock cycles ta camplete. Rut for the purpase af
+computing T, effeetive vahic of 161
+
+‘Avhigher degree of concurrency can be achieved if multiple instructions pipelines are
+‘implemented in the processor. This means that multiple functional units are used creating
+ppacallel paths through which different instructions can be executed in parallel with such an
+arrangement, it becomes possible to start the execution of several instructions in every clock
+cycle. This mode of operation is called superscalar execution. If it can be sustained for a long
+time during program execution the effective value of S ean be reduced to less than one, But
+the parallel execution must preserve logical correctness of programs Uhut is the results
+produced! must he same as thase produced hy the serial exceutinn af program Instructions.
+Now days many processors are designed in this manne
+Clock rate
+“These are two possibilities for increasing the clock rate ‘R
+
+4. Improving the IC technology makes logical cireuit faster, which reduces the time of
+‘execution of basic steps. This allows the clock period P, to be reduced and the clock:
+rate K to be increased.
+
+2, Reducing the ammount of processing done in one busie step also makes it passible to
+reduce the duck period P. however if the actions that have to be performed by an
+instructions remain the same, the number of busivsteps needed may inerase,
+Inerease im tho value ‘R! that are entirely caused hy improvements in IC recknology
+
+affects all aspects of the processor's operation equally with the exception of the time it takes
+tw access the main memory. In the presence of cache the percentage of accesses to the main
+‘memory is small. Hence much of the performance gain excepted from the use of faster
+technology can be realized
+
+Instruction set CISC & RISC:-
+
+Simple instructions require a small number of basic steps to execute, Complex
+Instructions invalve a large number af steps. For a pracessor that has anly simple instruction
+a large number of instructions may he neoded to porfarm a given programming task. This
+could lead to a large value af ‘N' and a small value of 'S' an the other hand if individual
+instructions perform more complex aperations, a fewer instructions will be needed, leading
+
+--- Page 51 ---
+‘Computer Organizavion and Architecnire
+to 2 lower value of N and a larger value af S. Its nat obvious if one choice ts herter than the
+other.
+
+Put complex instructions combined with pipelining (effective value af § <1) would
+achieve one best performance. However, itis much easier to implement efficient pipelining in
+processors with simple instruction sets.
+
+RISC and CISC are computing systems developed for computers. Instruction set or
+instruction set architecture is the structure of the computer that provides commands to the
+computer to guide the computer for processing dats manipulativa, Instruction set consists of
+instructions, addressing modes, native dats types, registers, interrupt, exception handling und
+‘momory architecrure. Instruction set can be cmulated in software hy using an interpreter ar
+Init into hardware of the processor. Instruction Set Architecture can he ennsidered as a
+Thoundary herween the software and hardware. Classification _of_micracontraliors and
+‘microprocessors can be done based on the RISC and CISC instruction set architecture.
+‘Somparison between RISC and CISC:
+
+| | RISC cise
+
+‘Acronyin Ir stands for ‘Reduced | 1t stands far ‘Complex
+
+4 Instruction Set Computer’ Instruction Set Computer’
+
+The RISC processus have a | The CISC processors have a
+
+Detinition smaller set of instructions with | larger set of instructions with
+few addressing nodes. many addressing nodes.
+Ichasnomemaryunitand.uses | It has a memory unit to
+
+Memory unit Ja separate hardware to | implement complex
+implement instructions, instructions.
+It has a hardwired unit of | It has a micro-programming
+
+Program i
+
+* programming. vat
+
+| Bestza | !=ts2complex complier design. | Itis an easy complier design
+
+Calculations — | TH caleulations are faster and | The calrulations are slow and
+precise. precise.
+
+Deooding Decoding of instructions is | Decoding of instructions is
+simple. complex.
+
+| time | #ecution timeis veryless. J Execution times very igh
+
+| Bers | © docs mor require extemal | te requires external memory
+
+Page
+
+--- Page 52 ---
+‘Computer Organization and Arcnitecnive
+| memory | memory for caleulations for caleulations
+Pipelining Pipelining does function | Pipelining does not function
+e correctly correcty
+Staling Seam James seduces 18 | rhe processors otten stall
+Code expansion can ho a] Code expansion is not a
+| scence | The spaceissaved The space is wasted.
+Used in high end applications | yj yw und applications
+leo z "8° | auromations, ete.
+processing
+cist RISC
+Emphasis on hardware ‘Emphasis on software
+Multiple instruction sizes and formats Instructions of same set with few
+formats
+Less registers \Uses more registers
+More addressing modes Fewer addressing modes
+Exlensive use of microprogramming [Complexity in compiler
+instructions take a varying amount of [Instructions take one cycle time
+cycle time
+Pipelining is difficult Pipelining is easy
+Page 38
+
+--- Page 53 ---
+Computer Organiavion and Archirerture
+CISC RISC
+ce ro
+Prose! Dee: pas ae
+vtermory [ia Reais Prooram ll Mae
+=
+Data Data
+ath path
+(ne intron = covert CVT (ne betnactin = Oe COP
+Piccomae Phelan
+1L0 Performance measurements
+‘The performance measure isthe time taken by the computer te execute a given bench
+mark, Initially some atwemp:s were made to create artifical programs that could be used as
+bench mark programs. But synthetic programs do not properly predic: the performance
+obtained when real application programs are eur
+A non-profit organization called SPEC- system pecformance Bvaluation Corporation
+seleis and publishes bench marks
+“The program selected range fram game playing, compiler, and data hase apaliattons
+to numerically intensive programs in astrophysics and quantum chemistry. In each case, the
+program is compiled under test, and she running time on a real computer is measured. The
+same programs also compiled and run on one computer selected as reference
+‘The SPEC’ rating is computed as follows.
+SPEC rating = Kunning time on the reterence computer/ Kunning time on the computer under
+test
+MUL-TIPROCESSORS AND WULTICOMPUTER
+Togeae
+
+--- Page 54 ---
+‘Computer Organization and Arcnitecnive
+Multiprocessors and td
+Multicomputers: f=
+* Mulliprocessor computer
+> Excl snurbet of sen apfcaton asks cara
+ecu auras of # ang ge ‘a5 pert
+>A prensa have acne tthe mamsry~soaechy
+mult roses
+> Cost processors, memory nits comple n-sn-aclon ners
+* Multcomputers
+> Each computer only have acess own memory
+* xahengs meesage Wa a corimurzaton "work messo0e
+pasting mabsorpers
+multicomputer multiprocessors
+Ir A computer made up afsoveral computers. [I A compter hat has mare than ane CPU on
+b. ntstrthured computing deals with hardwvarcfs matheroaee
+ind software systems containing more thay2. Multiprocessing isthe use of two or more
+ne processing element, multiple programs central processing units (CPUs) within a
+3. tecan run faster finste computer system.
+4. A multicomputer is multiple computers] 3. Speed depends on the all processors speed
+ach of wach can have multiple processes. | Single Computer with multiple processors
+5. Used for true parallel processing. 5. Used fur true parallel processing.
+[Processor can nutshure the memory. (6, Processors ean share the memory.
+f. called as message passing mulst computers |. Called az shared memory mult processars
+b. case is more fs. cast is tow
+Data Reprosontation:
+Page 37
+
+--- Page 55 ---
+[siny | 2 jor
+[oct | 8 _loazaase7_——*d
+[Decimal | 10 o1z3asc7e8
+[Hexadecimal | 16 [0123456789ABCDEF |
+
+«© Step 2 - Get the remainder from Step 1 as the rightmost digit (least significant digit)
+
+--- Page 56 ---
+‘Computer Organizavion and Architecnire
+Step Operation Result Remainder
+Step] 2/2
+sep? 14/2 7 0
+step3 7/2 3004
+Step 3/2 1 1
+steps 1/2 o 4
+‘As mentioned in Steps 2 and 4, the remainders have to be arranged in the reverse order so
+that the first remainder becomes the Least Significant Digit (LSD) and the last remainder
+becomes the Most Significant Digit (MSD).
+Decimal Number - 29-0 Binary Number ~ 11104
+Otier Base System wo Decimal System
+steps
++ Step 1 Determine the column (positional) valve of cach digit (this depends an the
+position ofthe digit and the base of the number system),
++ Step 2~ Multiply the obtained column values (in Step 1) by the digits in the
+corresponding columns.
++ Step 3 - Sum the products calculated in Step 2. The total is the equivalent value in
+decimal.
+Step BinaryNumber Decimal Number
+Step 111101 (C1 28) + (25) + (124) #02 +1 + 24)
+Sep 2111012 (16) 814104 the
+Step 3 111012 2
+Example
+Binary Number~ 111012
+Caleulating Recimal Equivalont
+Rinary Number 111012=Decimal Number 29.0
+(thee ase System to Non-DeeiralSysom
+steps
+Page 39
+
+--- Page 57 ---
+‘Computer Organization and Architectire
++ Step 1 Convert the original number ta a decimal number (hase 10),
++ Step 2 Convert the decimal number sa abrained to the new base number.
+Fxample
+Octal Number ~ 252
+Calculating Binary Equivalent ~
+Step 1 ~ Convert to Decimal
+Step Octal Number Decimal Number
+Sep 1 28, (284) 1 (58%)
+Step2 250 (6-5 jw
+step 286 hw
+Octal Number ~ 25» = Decimal Number - 2110
+Step 2 ~ Convert Decimal to Binary
+Step Operation Result Remainder
+Step) 21/2
+Step2 10/25 0
+Steep3 5/2 2 1
+Steps 2/2 Ft 0
+Stuep5 1/2 0 1
+Docimal Number 21:a= Rinary Number 101012
+Octal Number 25j= Binary Number 10101,
+Shorteurmethed -Binaryto Octal
+Steps
+‘+ Step 1 - Divide the binary digits into groups of three (starting from the right).
+‘+ Step 2 ~ Convert each group of three binary digits to one octal digit,
+Example
+Binary Number 10101»
+Calculating Outs! Equivalent —
+Page a0
+
+--- Page 58 ---
+‘Second generation
+devices. In this generation assembly language and high-level programming languages like
+Lael J
+ae _ma|
+Pa |
+
+--- Page 59 ---
+‘Computer Organization and Architectire
+Step Binary Number Octal Number
+Step1 10101) 10 1
+Sep? 101012 225s
+Swep3 101012 25,
+Binary Number ~ 10104» = Qutal Number - 25x
+‘Shorteut thal - Octal to Binary
+Steps
++ Stop 1 Convert each octal digit to 4 3 digit binary number (the acta’ digits may he
+treated as decimal for this converstan).
++ Step 2 ~ Combine all the resulting binary groups (of 3 digits each) into a single binary
+number,
+Example
+Octal Number ~ 250
+Calculating Binary Equivalent ~
+Step Octal Number Binary Number
+Step 1 25y 2ra5ca
+Step2 25 10> 101
+Sep 250 orotot:
+Octal Number - 25u - Binary Number ~ 101012
+‘Shortcut method -Binaryto Hexadecimal
+steps
++ Step 4 - Divide the binary digits into groups of four (starting frac the sight).
++ Step 2 ~ Convert eack group of four binary digits o uae hexadecimal symbo!
+Fxample
+Binary Number 191012
+Calentaing hexadecimal Fquivalent
+Step Binary Number Hexadecimal Number
+Step1 10101: 001 0101
+Pageat
+
+--- Page 60 ---
+‘Computer Organization and Architectire
+
+Swep2 101012 Las.
+
+Step 3 10101) 15:6
+Binary Number 191012= Hexadecimal Numbor 1546
+Shorteurmethod -Hesadedimalro Binary
+Steps
+
++ Step 1 ~ Convert each hexadecimal digit to a4 digit binary number (the hexadecimal
+
+digits may be treated as decimal for this conversion).
++ Step 2 ~ Combine all the resulting binary groups (ot 4 digits each) into a single binary
+number
+
+Example
+Hexadecimal Number ~ 1516
+Calculating Binary Equivalent ~
+
+Step Hexadecimal Number Rinary Number
+
+Step] 1515 ho Sie
+
+Sep? 15:6 0012 O1012
+
+swep3 1515 00101012
+Hexadecimal Number ~ 151 = Binary Number ~ 101042
+‘Binary Coded Docimal (BCD) end
+Im this code each decimal digit is represented hy 2 4-bit binary number. RCD Is a way to
+express each of the decimal digits with a binary code. In the BCD, with four bits we can
+represent sixteen numbers (0000 to 1111), But in BCD code only first ten of these are used
+(0000 to 1001). The remaining six code combinations Le. 1010 to 1111 are invalid in BCD.
+Advantages of BCD Codes,
+
++ Wis very similarto decimal system,
+
+Page a2
+
+--- Page 61 ---
+‘Computer Organization and Architectire
++ We need to remember binary equivalent of decimal numbers 0 10 9 anly.
+Disadvantages of BCR Codes
++ Theaddition and subrraction af RCD have different rules.
++ The BCD arithmetic is little more complicated.
++ ECD needs more number of bits than binary to represent the decimal number. 50 BCD.
+is less efficient than binary,
+Alphanumeric codes
+A binary digit or bit can represent only two symbols as it has only two states ‘0° ur "'. But
+Uhis is not enough for communication between two computers because there we need many
+mare symbols for communication. These symbals are required to represent 26 alphabers
+with capital and small lorters, numbers from 0 ta 9, punctuation marks and ather symbols
+‘The alphanumeric codes are the codes that represent numbers and alphabetic
+characters. Mostly such codes also represent other characters such as symbol and various
+Instructions necessary for conveving information. An alphanumeric code should at least
+represent 10 digits and 26 letters of alphabet i, total 36 items. The following three
+alphanumeric codes are very commonly used for the data representation,
++ American Standard Code for Information laterchange (ASC).
++ Extended Binary Coded Decimal Interciiunge Code (EBCDIC),
++ Five bit Baudot Code,
+ASCII code ts a 7-hit ende whereas FRCDIC fs an B-bit cade, ASCII eade Is more commonly
+used worldwide while FRCIC Is used primarily in large TAM compurers
+‘Complement Arithmetic
+Complements are used in the digital computers in order to simplify the subtraction
+operation and for the logical manipulations. For each radixer system (radix r represents base
+of number system) there are two types of complements.
+SN. Complement Description
+1 Radix Complement ‘The radix complement is referred to as the r's
+complement
+2 Diminished Radix Complement The diminished radix complement is referred
+Page a3
+
+--- Page 62 ---
+inayat complet
+Lscomplement
+cae acting complement 'seamploment Beanple 1's Complement flows
+|
+cranial ‘i
+tscomlement—4 9 [a Jo [1 Jo
+‘Zscumplement
+The 2's complement of binary number is obtained by adding 1 w the Least Significant Bit
+(158) of¢corplemens ofthe smb
+ample af 2's Complements asttiows
+cnennmmier [a Jo | s Jo [a
+re ea
+rae Pr PP
+Binary Arithmetic
+
+--- Page 63 ---
+Binary tion
+iii iccninaliaicralicne
+1 [o +o 0
+2 jos: 0
+3 [2 to 0
+alla t
+tn fourth cage hina ation ie ereatinga sum of (111 = 19) Lee wren in he given
+FeampleAdittion
+ors0:0 +00:100 -oo100110 = $2 tay
+0024010 -26
+#0001100 ~ 122
+TIT = 300
+Binary Subracton
+Suitraction and Borrow, those wo words wil he used wery quently fr the inary
+|
+2/070 | 0
+Si aia ald
+Sarees
+eileen
+FeampleSubraction
+9044010 #266
+Binary Multiplication
+
+--- Page 64 ---
+rmulpicaton.
+a a
+cca 0
+cay °
+Hee °
+suai {
+Feample Multiplication
+ail
+011010 xo0ss00 = 100133000
+0011010 262
+10001100 = 120
+0000099
+corio10
+oort010
+inary Dion
+Binary sion i tnllar decimal division. gelled a he tng ston procedure
+Feample Division
+101010 /000:20 - ooo
+oooit0 Js 1610 =420
+110
+nie
+to
+a
+
+--- Page 65 ---
+‘Computer Organization and Architectire
+‘The stops to be followed in subtraction by 1's complement are:
+1) To write Lown 1's eoralen ent of Ue subtreben
+i) To add this with the miruend.
+Ii) 1 the result of addition Fas a carry cver then itis dropped and an 1 is added inthe last bit
+Iv) If there is no carry over, then 1's complement of the result of addition is cbtained to get the
+final result and i i negate”
+Evaluate:
+(120101 - 190101
+Solutton:
+5 complement cf 19011 911910. Hence
+Mined - 1ioi0:
+41'S complernent of subtratiend = oi010
+Cary over 1 @OLtTT
+10000
+The required difference is 10000
+(i) 101022 — 131001
+Solution:
+1's complement of 111001 Is 090110. Kence
+Minued - qo1o4i
+B's complement - oooi10
+110001
+Hence the difference Is - 1110
+(mn 1011.001 ~ 110.10
+Solution:
+2S complement of 0119.100 is 1002.011 Hence
+Mined - 1o1a.001
+1's pamplement of subtranent tory
+Cary over-_1__0100.100
+Page a7
+
+--- Page 66 ---
+‘Computer Organization and Arcnitecnive
+ne
+o1o0.104
+Hence the required éitference Is 100.101,
+(iv) 1010.01 ~ 11010.10
+Solutions
+6 complement 11010,20 00101.01
+10110.01
+o1o3.01
+riowtae
+Hence the required difference is ~ 00100.03 ie. - 100.04,
+Subtraction by 2’s Complement
+Wits the he's of subtraction by 2's complement method we can easily subtract tne 8 nary
+pumbe's
+‘The operation is carried out by means of the following steps:
+(0) Ab Mast 2' complement of the subtishend is foune
+(i) Then itis added tothe minvend.
+(ll) Ifthe fina! carry over ofthe sum is 1, its dropped and he results positive.
+(iv) If there 's no carry over, the two's complement of the sum wil be the result and it's
+negative
+The following examples on subtraction by 2's complement will make the
+procedure clear:
+Evaluate:
+@ 20110-20130
+Solution:
+the numbers cf bits in the subtrahend is while that cf minuené is &. We make the number of
+bits in the subt-ahend equal to chat ct minuend by taking 2 "U" in the sixth place cr the
+subtranend.
+Now, 2's cormplement of 010119 is (101101 + 1) ie.101010. Adding this withthe minuend
+1 10116 HMnuend
+1 01016 2b eunplement oF subtralend
+
+--- Page 67 ---
+‘Computer Organization and Architectire
+Cemyover1 1 OOUC — Resul of accitien
+‘After dropping the carry over we get the result of subtraction to be 100000.
+(iy 20110 - 11010
+Solution:
+2 complement ef 11040 is (00101 + 3} ie, 00220. Here
+MinwJ- 10110
+2'scomplemert of subtrahend- _OOLID
+Result of areiton tito
+‘As Uere is nu carry over, Uie resull of sublrattion is meyalive and is obtained by waiting Ue 2
+teunipiement of £2100 ivw.(00022 + 1) er 00200,
+ence the difference is ~ 100.
+(ii 1010.21 - 1001.01
+Solution:
+25 complement of 10101.0° #5 0110.91. Hence
+Mnucd- 1010.41
+2 complement ofsubvahend= 0110.14
+Cemyover 2 9002.19
+After dropping the carry over we get the result of subtraction as 1.10
+(iv) 1010.01 ~ 31011.10
+Solution:
+2's complement cf 1011.10 ls 00100.10. Hence
+Minued- -19100.01
+2econvlamenl of sublrahend- ——-01109.10
+Result cfaccition- «1100.41
+‘As there Is n0 carry over the result of subtraction is negative and Is abtained by writing the 2's
+complement of 1000.11.
+Hence the recuired results - 0011.01.
+Page a9
+
+--- Page 68 ---
+‘Brmor Detection & Correction
+
+‘Enuc Detecting odes
+
+message. A simple example of error-detecting code is parity check.
+tose
+
+—
+
+--- Page 69 ---
+——
+i.
+« 1BM-370/168
+aT
+
+--- Page 70 ---
+‘Computer Organization and Arcnitecnive
+Party Chedngaf Sor Netetion
+Ins the simplest rechniqu for detecting and enrrecting erars. The MSB of an 8-hirs ward Is
+used as the parity bit and the remaining, 7 bitsare used as data ar message hits. The parity af
+G-bits transmitted word can be either even parity or odd party.
+se 16
+P | a6] 65] de | a3] a2] a2| ao
+r
+ary
+7 data bits
+Even parity ~ Even parity meuns the number of 1's in the given word including the parity
+bit should be even (2.4.6...)
+Oud parity — Odd parity means tie number of 1s in the given word including the pacity bit
+should be odd (1.35,
+Use of Party it
+The parity bit ean be set to O and + depending on the type of the party required.
++ For even parity, this bit is setto 1 or 0 such that the no, of "1 bits" in the entire word is
+even, Shows in fig (a)
++ For ode parity, this bitis set te 1 or U such that the no. of "L bits" inthe entire word is
+odd, Shown in fig. (b).
+P 4 Databits | Pk Dotabits
+0 | 1001032 1] 1001011
+Fig. (a)
+P fe Oatabits —,| P fe Data bits —
+Fa
+How Does Drror Detection Take Pace?
+Parity checking atthe receiver can detect the presence of an error if the parity ofthe receiver
+signal is different from the expected parity. That means, if itis known that the parity ofthe
+Lrunsmitied signal is always yoing to be Yeven" and if the received signal has an odd parity
+ten the receiver can cunclude that the received signal is wot correct Ian error is detected,
+Pages
+
+--- Page 71 ---
+Pb Databits _.|
+Transmitted _
+
+--- Page 72 ---
+unIT-11 (22 Lectures)
+
+RASIC COMPUTER ORGANIZATION AND DESIGN: Instruction codes, computer
+registers, computer instructions, instruction eyele, timing and control,
+rmemory-reférence instructions, input-output and interrupt.
+
+Book: M. Moris Manv (2006), Computer System Architecture, 3rd edition, Pearson/PHI,
+India Unit-5 Pages: 123-157
+
+Contra! processing nit: stacle organization, instruction formats, addressing modes,
+data transfer and manipulation, program control, reduced instruction set computer
+(RISC),
+
+Book: M. Moris Manv (2006), Computer System Architecture, 3rd edition, Pearsun/PHI,
+India: Unit-8 Paes: 241-297
+
+struction Codes
+
+Computer instructions are the basic components of a machine language program. They
+are also known as macro operations, since each one is comprised of sequences of|
+micro operations. Rach instruction initiates a sequence af micro aperations that fetch
+‘operands from registers or memory, possibly perform arithmetic, logic, or shift
+operations, and store results in registers or memory.
+
+Instructions are encoded as binary mstruction codes. tach instruction code
+contains of a operation code, or opcode, which designates the overall purpose of the
+instruction (og. add, subtract, move, input, etc). The mumber af hits allncated for the
+‘opcode determined how many dillerent instructions the architecture supports.
+
+Inadditian ta the opcode, many instructions also contain one or more nperands,
+which indicate where in registers or memory the data required for the operation is
+located. For example, and add instruction requires two operands, and a not instruction
+requires one.
+
+wi 65
+
+--- Page 73 ---
+‘Computer Organization and Arcnitecnive
+
+| Opcode | Operand | Operand
+‘The opcode and operands are most often encoded as unsigned binary numbers in
+ordcr ta minimize the number of bits used to store them, Far example, a 4-hit apeade
+encoded as a binary number could represent up to 16 dilierent operations.
+
+‘The cantral unit is respansible for decoding the opcode and operand bits in the
+instruction vegister, and then generating the control siguals necessary to drive all
+other hardware in the CPU to perform the sequence of microoperations that comprise
+the instruction
+Basic Computer Instruction Format:
+
+‘The Basic Computor has a 16-hit instruction code similar to the examples described
+above. It supports direet and indirect addressing modes.
+How many bits are required to specify the addressing mode?
+15141211 0
+11 OP | ADDRESS |
+12 O:diroer
+1 Asindireet
+Computer Instructions
+All Basic Computer instruction codes are 16 bits wide, There are 3 instruction code
+formats:
+Memory-reference instructions take a single memory address as an operand, and
+have the format:
+is i4izu 0
+| L)OP | Address |
+Page 5
+
+--- Page 74 ---
+‘Computer Organization and Arcnitecnive
+1F1= 0, the instruction uses direct addressing. ITT = 1, addressing in indirect.
+How many memory-reference instructions can exist?
+Register-reference instructions operate solely on the AC register, and have the
+following format:
+15 141211 0
+jojrajor |
+How many register-relerence instructions can exist? How many memory-
+reference instructions can coexist with register-reference instructions?
+Input/output instructions have the following format:
+15 14iz11 0
+|1]11 oP |
+How many 1/0 instructions can exist? How many memory reference
+insuuctions can coexist with vegister-reference and 1/U instructions?
+‘Timing and Control
+Al sequential ciscuits in the Basie Computer GPU are driven by a master clock, with
+the exception of the INPR register. At each clock pulse, the control unit sends con:rol
+signals to control inputs ofthe bus, the registers, and the ALLL
+Control unit design and implementation can be done by two general methods
++ Nhardwired control unit is designed from seratch using traditional digital logic
+design techaioues to produce @ minimal, optimized circuit. in otter words, the
+control unit is lke an ASIC (application-specific integrated circuit)
+Page 58
+
+--- Page 75 ---
+PT
+«Aneel lel Sen ono De
+aeiiranea ncaa aie
+weuelpetannehepapucianese
+
+strc
+
+tt een ane geal achasopesraseunlel
+
+ve ean ad sal es Sh a Be od
+
+a ge eereeeteeciok oes
+
+ee ae ae es a
+
+renhuctnonmonucechaersontonte vemos
+
+scarier
+
+Sklgnehit cond miele macencerlSelico
+
+bee errkastishra ener eurasaiaal
+
+neers ences aes oa eae
+woe en nga es
+cae ea ee LES OE
+cnt eons hats hein te tm
+parece ener sh
+
+|= Tire
+
+a
+
+:
+
+CY | =
+
+—————__—_—_—_—..
+
+--- Page 76 ---
+Computer Organiavion and Archirerture
+| Mleoprograrame contol Hardt oat
+| Heist nieotogra incool sete] his the sequential cei tat
+axes cz sigma gents 20a sia
+Scedaf opin, becme tires | eof cei ih
+ney a,
+Cums incite elaviorcanbe | Changes in contol nit bebaior cn
+| implexenied easy by modfhing the] be implemented only by redesigning
+asoistetion ic th cot sire. ‘het un
+Instruction Cycle
+In this chapter, we examine the sequences of micro operations that the Basic
+Computer goes through for each instruction, Here, you should begin to understand
+how the required control signals for each state of the CPU are determined, and how
+they are generated by the control unit.
+for each instruction of the Basic Computer can be refined into 4 abstract phases:
+1. Fetch instruction
+2. Decade
+3, Fetch operand
+4. Execute
+1. Program execution
+a. Instruction 1
+ii, Decode
+ii, Fetch operand
+iv. Execute
+b. Instruction 2
+i. Fetch instruction
+ii Decode
+iti, Fetch operand
+iv, Execute
+Instruction 3.
+
+--- Page 77 ---
+‘Computer Organization and Arcnitecnive
+
+Program execution begins with:
+
+PC address affirst instruction, C+ 0
+
+After this, the SC is incremented at each clock cycle until an instruction is completed,
+and then ic is cleared to begin the next instruction This process repeats until a HLT
+instruction is executed, or until the power is shut a7.
+
+Instruction Fetch and Decode
+
+‘The instruction fetch and decode phases are the same for all instructions, so the
+control functions and micro operations will be independent of the instruction cade.
+Everything that happens in this phase is driven entirely by timing variables Tu, Ts and
+‘Tz. Hence, all control inputs in the CPU during fetch and decade arc functions of these
+wee variables alone,
+
+THAR © PC
+
+Te IR MAR], PC © PC +1
+
+‘Ve: Doo = decoded IR(12-14), AK = 1R(0-11), 1 — IRQS)
+
+For every timing cycle, we assume SC ~ SC + 1 unlessitis stated that SC 0.
+
+‘The operation Di © decoded IR(12-14) is not a register transfer like most of our
+micro operations, but is actually an inevitable cansequence of loading. a value into the
+IR register. Since the IR outputs 12-14 are directly connected to a decoder, the outputs
+of that decoder will change as soon as the new values of IR(12-14) propagate through
+the decoder.
+
+Note that incrementing the PC at time T, assumes that the next instruction is at
+the next address. This may not be the case if the current instruction is a branch
+instruction, However, performing the increment here will save lime if the next
+instruction immediately follows, and will do no harm ifit doesn't. The incremented PC
+value is simply overwritten hy branch instructions.
+
+In hardware development, unlike serial sofware development, it is often
+advantageous to perform work that may nat be necessary. Since we can perform
+multiple micro operations at the same time, we might was well do everything
+that might be useful at the earliest possible time. Likewise, loading AR with the
+
+--- Page 78 ---
+‘Computer Organizavion and Architecnire
+address field from IR at Tzis only useful if the instruction is a memory-reference
+instruction, We won't know this until Ts, but there is na reason ta wait since there is
+no harm in loading AR immediately.
+Toput-Outnut and interrupt
+Hardware Summary
+‘The Basic Computer 1/0 consists of a simple terminal with a keyboard and a
+printer/manitor
+‘The keyboard is connected serially (1 data wire) to the INPR register. INPR is a shit
+register capable of shifting in external data from the keyboard one bit at a time INPR
+outputs are connected in parallel to the ALT
+Shilt enable
+\
+pecceeneet Liteeeenet
+| Keyboard |---/->] INPR «|~- serial 1/0 clock
+|
+/8
+Wl
+| alu |
+|
+/16
+|
+| AC <[- CPU master elocie
+Page 59
+
+--- Page 79 ---
+‘Computer Organization and Arcnitecnive
+How many CPU clock cycles are needed to transfer a character from the keyboard to
+the INPR register? (tricky)
+Are the clock pulses provided by the CFU master clock?
+15232, USB, Firewire are serial interfaces with their own clock independent of the
+PUL (USR speed is independent of processor speed.)
+
++ RSZ8Z: 115,200 kbps (some faster)
+
++ USB: 11 mbps
+
++ USR2: 480 mbps
+
++ KW40U: 400 mbps
+
++ FIWV800: 800 mbps
+
++ USR3:4.8 ghps
+OUR inputs are connected to the bus in parallel, and the output is connected serially
+to the terminal. OUTR is another shift register, and the printer/monitor receives an
+end-bit during each clock pulse.
+1/0 Operations
+Since input and output devices are not under the full control of the CPU (1/0 events
+are asynchronous), the CPII must somehow be told when an input device has new
+input ready to send, and an output device is ready to receive more output. The FGI flip-
+flop is set to 1 after a new character is shifted into INPR. This is done by the 1/0
+interface, not by the control unit. This is an example of an asynchronous input event
+(uot synchronized with or controlled by the CPU).
+
+‘The PGI flip-flop must he cleared after transferring the INPR to AC. This must he
+done asa micro operation controlled by the CU, so we must include it in the CU design
+‘The FGO flip-flop is set to 1 by the 1/0 interface after the terminal has finished
+displaying the last character sent. It must be cleared hy the CPU after transferring a
+character into OUTR. Since the keyboard controller only sets FGI and the CPU oaly
+clears it, 2JK flip-flop is convenient:
+
+Keyboard controller—->] J Q|-—->
+\ i
+
+--- Page 80 ---
+Computer Organiavion and Archirerture
+The period of fourth generation was 1971-1980. The compurers of fourth gencraton nse
+Very Large Scale inregrared (VSI) eieults. VLSI ecules having ahant S10 transstars and
+thor circuit elements ane thelr assaciaredcirclts om a single chip made it passhic ta have
+microcomputers of fourth generation. Fourth generation compuiters became more power
+compact, reliable, and affordable. As a result, it gave rise to personal computer (PC)
+—
+
+The main features of fourth yoneration are:
+
++ Vist tedmwlogy used
+
++ Vory cheap
+
++ Portail and rliahle
+
++ Use aFPcis
+
++ Very small size
+
++ NoAt.needed
+
++ Great developments inthe fields of networks
+
++ DeCI0
+
++ stan 1900
+
+© POPAT
+
++ CRAY-1(Super Computer}
+
++ CRAY-X-MP(Super Computer]
+‘Hifth generation
+Page|
+
+--- Page 81 ---
+Comparer Organaation and Archnortire
+Jor >>> FOL
+
+I i
+
+cpus >1K
+How do we control the CK input on the FGI Aip-flop? (Assume leading-edge
+‘There are two common methods for detecting when 1/0 devices ere ready,
+namely softwore polling and interrupts.These two methods are discussed in the
+‘Slack Oreanization
+Stack is the storage method of the items in which the last item included isthe first one
+to be removed/taken from the stack Generally a stack in the computer is
+memory unit with an address register and Ue register holding the address of the
+stack is known as the Stack Pointer (SP). A stack performs Insertion and Deletion
+operation, were the operation of inserting an isem is known as Push and eperation of
+incrementing and decrementng the stack pointer respectively.
+Register Stack
+Register or memory words can be organized to form a slack. The stack poiater is
+register that holds the memory address of the top ofthe stack. When an item need
+to be deleted from the stack, item on the tap of the stack fs deleted and the stuck
+pointer is decremented. Similarly, when an item needs tobe added, the stack pointer is
+incremented and witing the word atthe position indicated by the stack potater. There
+are two 1 bit register; FULL, and EMTY that are used for deserihing. the
+slack overflow and underflow conditions. Following micro-operations are pertormed
+during inserting and deleting an item in/from the stack
+Insert:
+SP «- SP 1 // Increment the stack pointer to point the nest higher addess//
+|
+
+--- Page 82 ---
+— []é
+aaa |_|
+[|
+#}—=}
+ml
+
+ah
+
+:
+
+--- Page 83 ---
+‘Computer Organization and Arcnitecnive
+Ina 64- word stack, the stack pointer contains 6 bits because 26 = 64.
+‘The one hit rogister FULL. is sot to 1 when the stack is full, and the onc-bit register
+EMTY is set to 1 when the stack is empty. DR is the data register that heles the binary
+data to be written into on read out of the stack. Initially, SP is decide to 0, EMTY is set
+to 1, PIL. = 0, so that §P points to the ward at address 0 and the stack is masleed
+emply and not full,
+PUSH SP@SP+1 increment stack pointer
+M[SP]@DR_——_ unit item an tap ofthe Stack
+Jc (SP= 0) then (FULL ® 1) check it stack is full
+EMTY®0 mask the stack not empty.
+POP —DR@|SP] read item trans the top of stack
+SP@SP-l decrement SP
+IGP=9) then (EMTY @ 1) check it stack is empty
+FULL@0 mark the stackenot full
+A stack can be placed in a portion of a large memory or it can be organized as
+a collection of a finite number of memory words or registers. Figure X shows the
+organization of a 64-word rogister stack. The stack pointer register SP contains a
+binary number whose value is equal to the address of the word that is currently on
+top of the stack
+
+‘Vhree items are placed in the stack: A, B, and ( in the order. item © is
+con the top of the stack so that the content of sp is now 3. To remove the top item, the
+stacle is popped by reading the memory word at address 3 and decrementing the
+content of $P. Item B is now on top of the stack since SP holds address 2, Yo insert a
+new item, the stack is pushed by incrementing SP and writing a word in the next
+higher location in the stack. Note that item Chas read aut hut nat physically removed.
+‘Vhis does not matter because when the stack is pushed, a new item is wrilten in its
+place.
+
+Jn a 64-word stack, the stack pointer contsins 6 bils because 26-64. since SP
+has only six bits, it cannot exceed a number greater than 63(1L1111 in binary), When
+
+--- Page 84 ---
+‘Computer Organizavion and Architecnire
+
+63 is incremented by 1, the result is 0 since 111111 + 1 =1000000 in binary, but SP
+can accommodate only the six least significant hits. Similarly, when 000000 is,
+decremented by 1, the result is 111111. The one bit register Full is set to 1 when the
+stack is full, and the one-bit register EMTY is set to 1 when the stack is empty of
+items. DR is the data register that halds the hinary data to he written in to or read ant
+of the stack.
+
+Initially, SP is cleared to 0, Fmty is set to 1, and Pull is cleared to 0, sa that SP
+points to the word al address o and the stack is marked empty and not full. if the stack
+is not full , 2 new item is inserted with a push operation. the push operation is
+implemented with the following sequence af micro-aperation.
+
+‘SP ©SP + 1 (Increment stack pointer)
+
+M(SP] < DR (Write item on top of the stack)
+
+if (sp=0) then (Full + 1) (Check if stacks full)
+
+Hinty = 0 ( Marked the stack not empty)
+
+‘The stack pointer is incremented so that it points to the address of the next-higher
+word. A memory write operation inserts the ward from DR inta the top of the stack
+Note that SP holds the address of the top of the stack and that M(SF) denotes the
+memory word specified by the address presently available in SP, the first item stored
+in the stack is at address 1. The last item is stared at address 0, if SP reaches 0, the
+stack is lull of item, so FULLLis set to 1
+
+‘This condition is reached if the tap item prior to the last push was in location 63
+and alter increment SP, the Last item stored in location 0, Once an item is stored in
+location 0, there are no more empty register in the stack, If an item is written in the
+stack, obviously the stack cannothe empty, sa EMTY is cleared to 0.
+
+DRe M[SP] Read item from the top of stack.
+
+SP & SP Decrement stack Pointer
+
+ill $P-0) then (mty = 1) Check if stack is empty
+
+FULL 0 Mark the stack not full
+
+--- Page 85 ---
+‘Campurr Organization and Architect
+‘The top item is read fram the stack into DR. The stack pointer is then decremented. if
+its value reaches zero, the stack is empty, so Empty is set to 1. This condition is
+reached if the item read was in location 1. Once this item is read out, SP is
+decremented and reaches the value 0, which is the initial value of SP. Note that if a
+pop operation veads Ue item Irom location O aud then SP is decremented, SP changes
+to 111111, which is equal to decimal 63. In this configuration, che word in address 0
+receives the last iter in the stack, Note alsa that an erroneous operation will result if
+tie stack is pushed when FULL=1 or popped when EMTY =1.
+Memory Stack.
+A stack can exist as a stand-alone unit as in figure 4 or can he implemented in
+a random access memory attached lo CPU, The implementation of a stack in the CPU
+is done by assigning a portion of memory to a stack operation and using a processor
+register as a stack pointer. Figure shows a portion of computer memory partitioned in
+to thee segment program, data and stack, The program counter PC points at the
+address of the next instruction in the program. The address register AR points at an
+array of data. The stack pointer SP points at the top of the stack. The three register
+are connected to a common address hus, and either one can pravide an address for
+‘memory. PC is used during the fetch phase to read an instruction. AR is used during
+the execute phase to read an operand. SP is used to push or POP items into or from
+the stack
+As show in figure -4 the initial value of SP is 4001 and the stack grows with
+decreasing addresses. Thus the first item stared in the stack is at address 4000, the
+second iten is stored at address 3999, and the last address hat can be used for the
+stack is 3000, No previous are available for stack limit checks,
+We assume that the items in the stack communicate with a data register DR. A new
+item is inserted with the push operation es follows.
+
+SPxSP4
+
+MISE] = DR
+
+--- Page 86 ---
+MET
+‘The tack pontr is decremented so that it points at he address ofthe nxt word A
+Memory write aperatin insertion the wor fram DR into the top ofthe stack A nese
+item deleted with a pop operations follows
+ne M{sP}
+spesP +t
+‘The op tem is read trom the stack nw DR The stack peimer Is then incremented to
+point the nost em inthe take Mostenrputers da not provide hardware to chek
+for stack overlow (FULL) or undertow (hupty). The stack limit can be checked by
+using to processor segster: one to hold upper lint and other hod the ower lait
+‘00
+5 —
+a (Inse’-ction)
+0
+ee Cata
+ore
+| 7
+src
+ba
+= —
+[3389
+feo)
+at
+ins 4 egusecann eu
+———_—_——n ee
+
+--- Page 87 ---
+‘Computer Organization and Arcnitecnive
+is another operator which is written between (A x B) and (C x D). Because of the
+precedence of the operator rmultiplication is cane first. The order af precedence is as:
+1, Exponentiation have precedence one.
+2, Multiplication and Division has precedence two
+3. Addition and subtraction has precedence three.
+
+Reverse polish notation is also known as postfix notation is defined as: In postfix
+notation operator is written after the operands. Fxamples of postfix notation are AR
+and CD-, Here A and B are two operands and the operator is wrilten alter these two
+operands. The conversion from infix expression into postfix expression is shown
+below.
+
++ Convert the inlix notation A x B + Gx D + ix K into postlix notation?
+SOLUTION
+AxB+CxD+ExF
+= [ABs] + (CDx) + [EF]
+= [ABxCDx] + [EFx]
+= [ABXCDxEF]
+= ARECDxRPx
+So the postfix notation is ABxCDxEF.
++ Convert the infix notation {A - B + Cx (Dx E-F)} / G+ Hx K into postfix
+notation?
+{A-B+ Cx (DxB-H)} /G+HxK
+= {A-B+Cx ((DEx] -F)} / G+ [Kx
+= [ARs Cx (DRXP)) / [GHKes]
+= {A-B + [CDEx!-x)) / [GHKx+]
+= {(AB-] + [CDEXF-x)} / [GHICx+]
+= [AR-CDRSP x4] / [ORKes]
+= [AB-CDEAF-x+GHKx+/]
+= AB-CDE&P-x+GHKix+ /
+So the postfix notation is AR-CDRKP-x+GHK+/.
+Now let's how to evaluate a postlix expression, the algorithm for the evaluation of
+postfix notation is shown below:
+
+--- Page 88 ---
+seme |
+sossaz-e7enay-m [| _~d
+[rr fa
+a
+
+--- Page 89 ---
+‘Three address Instruction:
+
+--- Page 90 ---
+‘Computer Organization and Arcnitecnive
+
+Most common in commercial computers. Each address field can specify either a
+processes register an a memary word.
+
+MOV RLA  RI@M A]
+
+ADD RB RI@RL+ M(B]
+
+MOV R2,C  R2@M[C) X= (A¥R)=(C+D)
+
+ADD KZ,D  RZ@RZ+M(D]
+
+MUL RLR2  RL@RI“R2
+
+Moy XIR1 MpX]@RI
+
+One Address instruction
+
+Ie used an implied aceumulatar (AC) rogister for all cata manipulation. For
+‘multiplication/division, there isa need Jor a second register.
+
+LOAD A AC@M [A]
+
+ADD B= AC@AC+ M(B]
+
+STORE I MUI]®@AG X= (A4B)«(C+A)
+
+Al operations are done between the AC register and a memory operané. It's the
+address of a temporary memory location required for storing the intermediate result.
+Loan © AC@M(C)
+
+ADD D = ACWAC+M()
+
+ML T — AC@AC+M(T)
+
+STORE X —- M[xI@AC
+
+Zero - Address Instruction
+
+A stack organized computer dacs nat use an address ficld for the instruction ADD and
+MUL. The PUSH & POP instruction, however, need an address field to specily the
+operand that communicates with the stack (TOS @® top of the stack)
+
+PUSH A TOS@A
+
+PUSH BB TUS@B
+
+ADD TOS ® (A+B)
+
+PUSH ¢ -TOS@C
+
+PUSH =D -TOS@D
+
+ADD TOS ® (C+D)
+
+--- Page 91 ---
+The povind of fth gonoration 6 HAG. date. Im the fh generation, the VIS echnalogy
+came WISE (ka targe Sale tegration) technology, resulting In the prodution of
+Ineoproeesr eps having ten milan locroni eomparnts, This generation thas an
+parallel processing hardware and AI (Arial Inteligence) software Al san emerging
+branch in computer sine, which interprets means and method ofmalng computes thik
+severstion,
+includes:
+
++ Robotics
+
+Neural Neto
+
++ Came Playing
+
++ Dovslopont af expert systems to make desma! fe sitions
+
+\
+‘a
+val Se |
+
+The main fetes Ath generation are
+
++ Utsttechsolone
+
++ Advancement a Superconductor ecology
+
++ oslo
+
++ tap
+
++ NoteRook
+
++ track
+sss]
+
+--- Page 92 ---
+‘Computer Organization and Arcnitecnive
+
+MUL TOS ® (C+ D)*(A+B)
+
+PoP =X MIX] TOS
+
+Addressing Modes
+
+‘The operation ficld of an instruction specifies the operation ta be perfarmed This
+operation must be executed on some data stored in computer register as memory
+‘words. The way the operands are chosen during program execution is dependent on
+the addressing mode of the instruction. The addressing macle specifies a rule for
+interpreting or modifying the address field of the instruction between the operand is
+activity referenced. Computer use addressing mode technique for the purpose of
+accommodating one or both of the following provisions.
+
+(2) Yo give programming versatility to the uses by providing such facilities as
+pointer to memory, counters for top control, indexing of data, and program relocation.
+(2) To reduce the number of bits in the addressing fields of the instruction
+Addressing Modes: The most common addressing techniques are
+
++ Immediate
+
++ Direct
+
++ Indivect
+
++ Register
+
++ Rogister Indirect
+
++ Displacement
+
++ Stack
+
+All computer architectures provide more than one of these addressing modes.
+‘The question arises as to how the control unit can determine which addressing mode
+is being used in a particular instruction. Several approaches arc used. Often, different
+opcodes will use dilferent addressing modes. Also, one or more bits in the instruction
+
+--- Page 93 ---
+‘Computer Organization and Architectire
+format can be used as a mode field. The value of the mode field determines which
+addressing made is to be used
+What is the interpretation of effective address. In a system without virtual
+memory, the effective address will he cither a main memory address or a register. Ina
+virtual memory system, the elfective address is a virtual address or a register. The
+actual mapping to a physical address is a function of the paging mechanism and is
+invisile to the programmer.
+Immediate Addressing:
+‘The simplest form of addressing is immediate addressing, in which the
+operand is actually present in the instruction:
+OPERAND= A
+This mode can be used to define and use constants or set initial values of
+variables. The advantage of immediate addressing is thal no memory reference other
+than the instruction fetch is required to obtain the operand. The disadvantage is that
+the size of the number is restricted to the size of the address field, which, in most
+instruction sets, is small compared with the world —_Iength.
+Direct Addressing:
+A very simple form of addressing is direct addressing, in which the address flold
+ccontaius the elleclive address of the operand:
+
+Page 72
+
+--- Page 94 ---
+‘Computer Organizavion and Architecnire
+EASA
+Icrequires only one memory referenee and no special calculation
+TS
+Indirect Addressing:
+With direct addressing, the length of the address field is usually less than the
+‘word length, thus limiting the address range. One solution is to have the address field
+refer to the address of a word in memory, which in turn contains a full-length address
+of the operand. This is knawn as indirect addressing:
+EA=(A)
+ss
+cereale
+Register Addressing:
+Register addressing is similar to direct addressing The only difference is that
+the address field refers to 2 register rather than a main memory address:
+EA=R
+
+Page 73
+
+--- Page 95 ---
+‘Computer Organizavion and Architecnire
+The advantages of register addressing are that only a small address field is
+ceded in the instruction and na memary roference is required. The disadvantage of
+register addressing is that the address space is very limited.
+‘The exact register location of the operand in case of Register Addressing
+Mode is shown in the Figure 34.4, Here, 'R’ indicates a register where the operand is
+present.
+Register Indirect Addressing:
+Register indirect addressing is similar to indirect addressing, except that the
+address field refers to a register instead of a memory location. It requires only one
+‘memory reference and no special caleulation.
+EA=(R)
+Register indirect addressing uses ane loss memory reforenee than indirect
+addressing, Because, the first information is available in a register which is nothing
+but a memory address. From that memory location, we use to get the data or
+information. In general, rogister access is much more faster than the memory access
+EE
+Displacement Addressing:
+
+Page 74
+
+--- Page 96 ---
+‘Computer Organization and Arcnitecnive
+A very powerful mode of addressing combines the capabilities of direct
+addressing and rogister indirect addressing, which is broadly categorized as
+displacementaddressing
+EA=A+(R)
+Displacement addressing requires that the instruction have two address fields,
+al least one of which is explicit The value contained in one address field (value ~ A)
+is used directly. The other address field, or an implicit reference based on opcode,
+refers to a register whose contents arc added to A ta praduce the effective address
+‘The general format of Displacement Addressing is shown in the Figure 4.6
+‘Three oF the most common use of displacement addressing are:
++ Relativeaddressing
++ Base-register addressing
+‘+ Indexing
+fatal
+Relative Addressing:
+For relative addressing the implicily relerenced register is the program
+counter (PC). That is, the current instruction address is added to the address field to
+produce the BA. Thus, the effective address is a displacement relative to the address
+of the instruction.
+Rase-Register Addressing:
+
+Page 78
+
+--- Page 97 ---
+‘Computer Organization and Arcnitecnive
+
+The reference register contains a memory address, and the address field
+contains a displacement fram that address. The register reference may he explicit ar
+implicit. In some implementation, a single segment/base register is employed and is
+used implicitly. In others, the programmer may choose a register to hold the base
+address of a segment, and the instruction must reference it explicitly
+Indexing:
+
+‘The address field references a main momory address, and the reference
+register contains @ positive displacement from that address. In this case also the
+register reference is. sometimes explicit. and sometimes implicit.
+Gonerally index register are used far iterative tasks, it is typical that there is a
+need Lo increment or decrement the index register aller each reference to it, Because
+this is such a common operation, some system will automatically do this as part of the
+same instruction cycle
+
+‘This is known as auto-indexing, We may get wo lypes of euto-indexing: -one is
+auto-incrementing and the other one is -auto-decrementing. If certain registers are
+devoted exclusively to indexing, then auto-indexing can be invoked implicitly and
+automatically. IF general purpose register are used, the auta index aperation may need
+to be signaled by abit in the instruction.
+
+Auto-indxing using increment can he depicted as follows:
+
+BA-A+ (8)
+
+Re(R)+1
+
+Auto-indexing using decrement can he depicted as follows:
+
+BA-A+ (8)
+
+R=(R)-1
+
+Jn some machines, both indirect addressing and indexing are provided, and it is
+possible to employ both in the same instruction, There are two possibilities: The
+indexing is performed either before or after the indirection. If indexing is perfarmed
+alter the indirection, itis termed post indexing
+
+EA=(A)+(R)
+
+--- Page 98 ---
+Comparer Qrgantationand Ariteenre
+containing an address, This address is then indexed by the register value,
+With pre indexing, the indexing is performed before the indirection:
+FA=(A=(R)
+fn address is calculated, the calculated address coniains not the operand, but the
+address ofthe operand,
+Stack Addressing:
+A stack i8 a linear array ot lst of locations, It is sometimes referred to as a
+are appended to the top ofthe stack so thal, at any given time, the block is partially
+filled, Associated with the stack isa pointer whose value isthe address of the top of
+the stack. The stack pointer Is maintained in a register. Thus, references to stack
+locations in memory are in fac register indirect addresses.
+‘The stack mode of addressing is a form of implied addressing. The machine
+Insiructions need not include a memory reference but impliily operate an the top of
+the stace
+Value addition: & Quick View
+Various Addressing Modes with Examples
+The most common names for addressing modes (names may differ
+[mong arentecture)
+fidaresalng’ EXAMPT®— paconin cau
+modes Instruction ™ i ene ne:
+easter Ada Ke RARE RS when value
+Intate Add, 83 RA eRe + 3 For constants
+faddRe, RA «= Re fccesina Fal
+Pisplacement io9¢a2} Mem[100+R1) variables
+fccesing ung
+Reaiter agg neat) Rd-<-Ra-+ mR] Spot
+ise BY
+hncexee ROARS, (RL RE <= RS 4 CS pase ot
+ee Hemera) bray
+Fe inex
+
+--- Page 99 ---
+Comparer Organaation and Archnortire
+Uefa ta
+sd iad RA <- RL + Mem[10i leccessing static
+Bre (AR Rt Rd Wemfuoos) ce at
+irra te
+Memory kad Rt, Rc RI diese of a
+detered —@()”—MemiMer[ 3] banter a, tea
+Frode welds
+setter
+Kleooina
+huts dd RARE <A 4MarnfRD] [na oop
+Increment [R2)+ RE <= RR Re - star of
+puto: dd a= RE Rd parm can, tlso
+Gecement (Re) RI SoRT + weminz] PRR
+End po
+Used to index
+arays, May be
+\ecaled Add Ra, I< . lee = any
+190(72}(R5] RE Nem[sonsR? RIM EE
+Frode some
+Mem **the name for memory:
+Mem(Ra] rater to contents oF memery location whose address ever by the
+Eertents of
+Source: Self
+‘Data Trausfer & Manipulation
+Computer provides an extensive set of instructions to give the user the flexibility to
+carryout various computational task Most computer instruction can be elassiied into
+(1). Data transfer instruction
+(2), Data manipulation instruction
+Data Wansier instruction cause transferred dala fiom one location to another without
+changing the binary instruction conten: Data manipulation instructions are chose that
+Tan7a
+
+--- Page 100 ---
+‘Computer Organizavion and Architecnire
+
+decision-making capabilities and change the path taken by the program when
+executed in the computer:
+
+(1) Data Transfer Instruction
+
+Data transfer instruction move data from one place in the enmputer to anather
+without changing the data content, he most common translers are between memory
+and processes registers, between processes register & input or output, and between
+processes register themselves
+
+(Typical data transfer instruction)
+
+(2) Data Manipulation Instruction
+
+It performs operations on data ané provides the computational capabilities for the
+computer, The data manipulation instructions in a typical computer are usually
+divided into three basic types.
+
+(a) Arithmetic Instruction
+
+(b) Logical bit manipulation Instruction
+
+(0) Shift Instruction.
+
+{a) Arithmetic Instruction
+Pg
+
+--- Page 101 ---
+‘Computer Organization and Arcnitecnive
+Subtract, Sub
+Multiply Mui.
+Divide pw
+‘Add with Carry abDC
+Subtract with Basses. SUBB
+Negate (2's Complement) NEG
+{(b) Logical & Bit Manipulation Instruction
+Name Mnemonic
+Clear ciR
+Complement COM
+AND AND
+oR OR
+Exclusive-Or xOR
+Glear Cary CRC
+Set Carry spre
+Complement Carry COMC
+Enablelnterrupt ET
+Disable laterrupt OL
+Aol shift Instruction
+Instructions te shift the content of an operand ace quite useful and one often provided
+in several variations. Shifts are operation in which the bits of a word are moved to the
+loft or right. The bit shifted in at the and of the word devermines the type of shift used.
+Shift instruction may specify either logical shift, arithmetic shifts, or rotate type shifts.
+Name Mnemonic
+Logical Shift right SHR
+Logical Shift left SHL
+Arithmetic shiftright HRA
+‘Arithmetic shift left SHLA
+Rotate right ROR
+
+--- Page 102 ---
+» hromisai
+COMPUTER TYPES:
+Digital Computers: - Operate essentially by counting. All quantities are expressed us
+disercte ar numbers. Digital computers are useful for evaluating arithmorte expressions and
+=e. ihe
+—— 2 ee
+Hybrid Computers are computers that exhibit features of analog
+computers and digital computers. The digital component normally serves as the controller
+
+--- Page 103 ---
+‘Computer Organization and Arcnitecnive
+el
+ea TED |
+cali te ae
+Introduction About Program Gontrok-
+A program that enhances an operating system by creating an environment in which
+you canrunother programs Control programs generally pravicle a graphical
+interface and enable you to run several prograns at once in dillerent windows,
+Control programs are also called operating environments.
+
+‘The program control functions are used when a series of conditional or
+unconditional jump and return instruction are required. These instructions allow the
+program to execute only certain sections of the control logic if a fixed set of logic
+conditions are met. The most common instructions for the program control available
+in most controllers are described in this section.
+
+Introduction About status bit register:-
+
+Astatus register, flag register, or conditian ende register is a collection of]
+status flag bits for a processor. An example is the FLAGS register of the computer
+architecture. The flags might be part of a larger register, such as a program status
+word (PSW) rogister.
+
+‘The status register is a hardware register which contains information about the
+stare of the processor. Individual bits are implicitly or explicitly road andar written
+by the machine code instructions executing on Uhe processor. The status register in a
+traditional processor design includes at least three central flags: Zero, Carry, and
+Overflow, which aro set or cleared automatically as effects of arithmetic and hit
+‘manipulation operations. One or more of the flags may then be read by a subsequent
+conditional jump instruction (including conditional calls, returns, etc. in some
+machines) or by some arithmetic, shift/rotate or bitwise operation, typically using the
+carry flag as input in addition to any explicily given operands, there are also
+processors where other classes of instructions may read or write the fundamental
+
+Page A
+
+--- Page 104 ---
+ie the other indicates whether a subtraction or addition
+
+--- Page 105 ---
+a
+m
+“Mnemonics Branchinstruction “Tested control]
+
+--- Page 106 ---
+GT Branch i Greater Than
+
+GE Branch i'Greater Than or Equal ress)
+
+BLT Branch f Less Phan AcB
+
+PLE Branch f Less Than or Equal Aer
+
+BE Branch i Equal
+
+BNE Branch 1 wot Equal
+Introduction About program interrupt:
+When a Process is executed by the CPU and when a user Request for another Pracess
+then this will create disturbance for the Running Process. This is also called as
+the Interrupt.
+
+Interrupts cam be generated by User, Some Error Conditions and also by
+Software's and the hardwace's. But CPU will handle all the Interrupts very carefully
+Very carefully means the CPU will alsa Provide Response to the Vatious Intectupts
+those are generated, So that When an interrupt has Occurred then the CPU will handle
+
+Interrupts allow the operating system to take notice of an external event, such
+handle unusual events like divide-by-zero ertors coming from cade execution.
+
+The sequence ofevents is usually lke this:
+
+The processor notices the interrupt and suspends the cursently running software
+
+The processor jumps tothe matching interrupt handler function inthe OS
+
+‘The processor resumes where it left ofl in the previously running software
+
+The most important interrupt for the operating system is the timer tik interrupt. The
+timer te interrupt allaws the O§ to periodically regain control from the currently
+running user process. The OS can then decide to schedule another process, return back
+
+--- Page 107 ---
+‘Computer Organization and Arcnitecnive
+to the same process, do housekeeping, ete. The timer tick interrupt provides the
+foundation for the cancept of preemptive multitasking.
+‘TYPES OF INTERRUPTS
+Gonerally there are three types of Interrupts those are Occurred For Example
+4) Internal Interrupt
+2) External Interrupt.
+3) Sofware Interrupt.
+Linternal Interrupt:
++ When the hardware detects that the program is doing something wrang, it will
+usually generate an interrupt usually generate an interrupt.
+~ Arithmetic error - Invalid Instruction
+Adérossing error Hardware malfunctian
+
+~ Page faull - Debugging
++ A Page Fault interrupt is not the result of a program error, but it does require the
+operating system to get control
+
+‘The Internal Intecrupts are those which are occurred due to Some Problem in
+the Execution For Example When a user performing any Operation which contains any
+Frror and which contains any type of Rrror. So that Internal Interrupts are those
+whieh are occurred by the Some Operations or by Some Instructions and the
+Operations those are not Possible but a user is trying for that Operation. And The
+Sofware Interrupts are those which are made some call to the System for Fxample
+while we are Processing Some Instructions and wlien we wants to Execule one more
+Application Programs
+2.External Interrupt:
++ 1/0 devices tell the CPU that an 1/0 request has completed by sending an interrupt
+signal to the processer.
++1/0 errors may also generate an interrupt.
+
+--- Page 108 ---
+‘Computer Organization and Architectire
+
++ Most computers have a timer which interrupts the CPU every so many interrupts the
+CPU every sa many milliseconds.
+
+‘The External Interrupt occurs when any Input and Output Device request for any
+Operation and the CPU will Fxecute that instructions first Por Fxample When a
+Program is executed and when we move the Mouse ou the Sereen then the CPU will
+handle this External interrupt first and after that he will resume with his Operation.
+3.Software interrupts:
+
+‘These types if interrupts can occur only during the execution of an instruction. They
+can be used by @ programmer to cause interrupts if nced be. The primary purpose of
+such interrupts is to switch lrom user mode to supervisor mode.
+
+A software interrupt occurs when the processor executes an INT instruction
+Written in the program, typically used to invoke a system service. A processor
+interrupt is caused ky an electrical signal on a processor pin, Typically used by devices
+to tell a driver that they require attention. The clock tick interrupt is very common; it
+wales up the processor fram a halt state and allows the scheduler to pic ather work
+to perform.
+
+A pracessar fault like access violation is triggered hy the pracessar itself when it
+encounters a condition that prevents iL {rom executing code. Typically when il Lies to
+read or write from unmapped memory or encounters an invalid instruction,
+
+cISC Characteristics
+
+A computer with large number of instructions is called complex instruction set
+computer ar CISC. Complex instruction set computer is mastly used in scientific
+‘computing applications requiting lots of Hloating point arithmetic.
+
+% Alarge number of instructions - typically from 100 to 250 instructions.
+
+> Some instructians that perform specialized tasks and are used infrequently.
+
+> Alarge variely of addressing modes - typivally 5 to 20 dillerent modes,
+
+> Variable-length instruction formats
+
+Page AG
+
+--- Page 109 ---
+Toons aren ad
+> Instrucons that manipulate operands tn memory.
+lsc Characteristics
+‘A computer with few instructions and simple construction 1s called reduced
+characteristics of ISL architecture are,
+> Relatively few instructions
+> Relatively few addresing modes
+> Memory acess limited to load and store instructions
+> Alloperations are done within the registers ofthe CPU
+> Single ce instruction execution
+> lardwired and miro programmed control
+cise rise
+Tle ston aces and ars [nse of aame seh Te
+feat
+Ciao wee of ricoprogremming TOOnPlemy comple
+Peking aoa Patna aay
+Faampleof sc 8 C8
+eomples of CSC Instruction starches ve PDP-11, WA, Marra 68,
+‘uit sr encop vCsan ers ko sence base
+amples of RISC families induée DEC Alpha, AMD 20k, ARG, Atmel AVR,
+ackin ntel 6 and i960, UPS, Motorola YOUU, PA-RISC Power {ining Power?)
+Super SPARCand ARM tbo
+
+--- Page 110 ---
+‘Computer Organization and Architectire
+Which one is beter 2
+‘We cannot differentiate RISC and CISC technology because both are suitable at its specific
+application. What counts is how fast a clup eas execute the 1astructioas ici given aad how well st
+tins existing software Today, hoth RISC nnd CISC manufhetueors aro doing everything to get an
+edge on the competition,
+UNIT- IIT (12 Lectures)
+MICRO-PROGRAMMED CONTROL: Cantral memory, address sequencing, micro-pragram
+‘example, design of control unit.
+Book: M. Moris Mano (2006), Computer System Architecture, 3rd edition, Pearson/PHI,
+India: Unit-7 Pages: 213-238
+
+Page Aa
+
+--- Page 111 ---
+© The complexity of the digital system is derived form the number of sequenves that ure
+
+--- Page 112 ---
+‘Computer Organization and Arcnitecnive
++ The control nt initiates a series af sequential steps af mieva operations
++ The control variables ean he represented by a string of 1'sand 0's called a contral word
++ Amicro programmed control unit isa canteal unit whose binary contral varishles are stared
+inmemory
++ Asequence of microinstructions constitutes a micro program
+=the control memory can bea read-only memory
++ Dynamic microprogramming permits 8 micro program to be loaded and uses a writable
+control memory
++ A computer with a miero programmed control unit will have two separate memories: a
+‘main memory and a contrul memory
++ The mlero program consists of micrainstructions thar specify vartons Internal contral
+signals for execution of register micra operations
++ These microinstructians generate che micro aporations ra:
+
+fetch the instruction from main memory
+
+> evaluate che effective address
+
+execute the operation
+
+> return control to the fetch phase forthe next instruction
++ The contrul memory address register specifies the address of the microinstruction
++ The contrul data register holds the microinstruction reud from memory
++ The miervinstruction contains a control word that specifies une ur mure :iieru operations
+for tho dara processor
+4+ The location for the next micra instruction may, or may nat be the next in sequence
++ Some bits of the present micro instruction control the generation ofthe address ofthe nest
+‘micro instruction
++ The next address may also be a function of external put conditions
++= While the micro operations are being executed, the next address is computed in the next
+address generator circuit (sequencer) and then transferred into the CAR toread the next
+‘micro instructions
++ Typical functions ofa sequencer are: v incrementing the CAR by one
+
+loading nts she CAR and address from contro! memory
+
+transferring an external address
+
+loading an initial address to start the contral operations
+
+--- Page 113 ---
+Toons aren ad
+of ferent equation.
+an
+r=
+pit bes
+wil oe
+——— a
+
+asad on sie and capably, enmpiters are road eased nr
+Men ComputerstPersona Comper
+‘Amirocomputer i the smallest general purpose processing system. The older pc started 8
+bit processor eth peed of3 7M ad current pe Ge bit processor with speed of 66 GB.
+Bamples'~ EM PCs, APPLE computers
+
+1. vesitops
+
+2, Portes
+‘The different portable camputersare
+1) taptop
+2) Nowe
+3) Falmeop (hand hls)
+4) Wearable eomputers
+expensive han destop. The weight of laptop i around to Sg
+
+--- Page 114 ---
+‘Addressing Sequencing:
+penis tees
+rmcmemnton [sea | |
+Microinstruction Address |° 1 ¢ 1 Lo 0
+or
+
+--- Page 115 ---
+‘Computer Organization and Arcnitecnive
+
+control ROM.
+
+control memary (CM); holds CWs
+
+opcode
+
+‘opcode field from machine instruction
+
+mapping logic
+
+hardware which maps opcode into microinstruction address
+branch logic
+
+determines how the next CAR value will be determined ‘rom all the various possibilities
+muttiplexors
+
+implements choice of branch logit for next CAR value
+incrementer
+
+generates CAR + Tas. passible nest CAR value
+
+ser
+
+used to hold return addzess for subrousine-call branch operations
+
+Conditional branches are necessary in the micro program, We must be able to perform
+some sequences of micro-ops only when certain situations or conditions exist (2g, for
+conditional branching 3t the machine instruction level); to implement these, we need to be
+able to conditional execute or avoid certain microinstructions within routines.
+
+Subroutine branches are helpful to have at the micro program level, Many routines
+contain tdencieal sequences of miralnstructions; putting them Into subroutines allows those
+routines to be shorter, thus saving memory. Mapping of opeades ra. micrainstruction
+addresses can be dane very simply. When the CM is designed, a “required longth 13
+etecmine for the machine instruction soutines (Le, the length of the longest one), This is
+rounded up to the nest povier of 2, yielding a value k such that2 Kenieroinstructions will be
+sutficient to implement any routine
+
+‘Yhe frst instruction of each routine will be located in the CM at multiples of this
+“required” length, Say this is The first routine is at 0; the mext, ut N; the next at 2°Ns ete
+‘This can be accomplished very easily. For instance, with a four-bit opeode and routine length
+of four microinstructions, is two; generate the microinstruction address by appending two
+zero bits ta the apeade:
+
+--- Page 116 ---
+‘Computer Organization and Arcnitecnive
+Opexate Aaklhecs
+‘maroon
+Mapping Mask Ok x x 0 0
+
+Marcinstnetins hades [© 2 6 11 00
+Alternately, the n-bit opcode value can be used as the “address” input of aZmx BE KOM: the
+contents of the selected “word! in the KOM will be the desired M-bit CAK address for the
+beginsing of the routine implementing that instruction, (This technique allows for variable-
+length routines in the CM.) >pp We chouse between all the possible ways uf generating CAR
+values by feeding them all nto a multiploxor bank, and implementing spectal branch logic
+which will determine how the muses wil pass on the next address ta the CAR.
+
+As there are four possible ways of determining the next address, the multiplexor bank
+is made up of N'4x1 muxes, where Nis the umber of bits in the address of a CW. The branch
+logic is used to determine which of the four possible "next address’ values is to be passed on
+to the CAR; its two output lines are the select inputs for the muxes.
+
+Eight Conditions for Signed-
+Magnitude Addition/Subtraction
+SUBTRACT Monies
+Operation
+- aoe | ace AsB
+| en | oe
+2 eta | es
+3) ar ~a-B) | ay | vam)
+4 cao
+5[0.c0 | Tac [cas | va |
+6) ecu | Pr
+Barer)
+8 ewe -a-p) | +-ar | sam
+Page 98
+
+--- Page 117 ---
+‘Computer Organization and Arcnitecnive
+
+Addition and Subtraction
+
+Four asle computer arithmetic operations are addition, subtraction, division and
+‘multiplication. The arithmetic eporation tn tho digital campurer manipulate data ta produce
+results, It is necessary to design arithmetic procedures and circuits to program arithmetic
+‘operations using algorithm. The algorithm is 2 solution to any problem and itis stated by a
+finite number of well-defined procedural steps. ‘The algorithms can be developed for the
+following types of data
+
+1, Fixeé point binary data in signed magnitude representation
+
+2, Fixed point binary data in signed 2's complement representation.
+
+4, Floating point representation
+
+4. Rinary Caded Neeimal (RCD) data
+
+Addition and Subtraction with signed magnitude
+
+Consider two numbers having magnitude A and B. When the signed numbers are added or
+subtracted, there can be 6 different conditions depending on the sign and the operation
+performed as shown in the table below:
+
+Operation Ade magnitude When A># When A= When A-B
+
+(ay+U8) Hee) = 8 =
+
+(A)+(8) = HAR) -B-A) HA-B)
+
+(A+B) = 4h-B) +80) 4-8)
+
+CA)+CB) (4-8) = = =
+
+(4) -(08) aR) (RA) 1(4-R)
+
+Ga-CR rR) = .
+
+(4)-(8) (4-8) - - -
+
+(aye) = {A-B) HOA) HA-B)
+
+From the table, we can derive an algorithm for addition and subtraction as follows:
+
+Addition (Subtraction) Algorithm:
+
++ When the signs of A & B are identical, add the two magnitudes and attach the sign of A to
+the result.
+
++ When the sign of A & B are uifferent, compare the mnagnitude and sublract the smaller
+number from the large number. Chovse the sign ofthe result to be same as AifA > Bor the
+complement of the sign of Af < R. Ifthe two nursbers are equal, subtract R from A and
+make the sign of the result postive
+
+--- Page 118 ---
+‘rgiver eplemeiisten
+Bo (eee
+@ Dicer J inseses
+
+--- Page 119 ---
+‘Computer Organization and Arcnitecnive
+Hardware Algorithm
+_t
+Pee
+| ot
+—
+{fig flowehare for edd and suheraet operations
+As and Bs are compared by an exclusive-OR gate. I utput0, signs are identical, if 1 signs ace
+different,
+sor Add operation, identical signs dictate addition of magnitudes and for operation
+identical signs dictate addition of magnitudes and for subtraction, citferent magnitudes
+dictate magnitudes be added. Magnitudes are added with 3 micro operation EA
++ Two magnitudes are subtracted if signs are different for add operation ani identical for
+subtract operation, Magniudes are subtracted with a micro operation BA = Band number
+(Wis number is checked agsin fur 0 to make positive 0 [As-O) in Ais carreet result. B= 0
+Indicates A < so we take 2's complement of A
+Multiplication
+Hardware Implementation and Algorithm
+Generally, the multiplication of two final point binary number in signed magnitude
+representation is performed by a process of successive shift and ADD operstion. The process
+consists of looking at the successive bits af the multiplier (least significant bit first) the
+‘multiplier is 1, then the multiplicand is copied dow otherwise, 0's are copied. The numbers
+Page 96
+
+--- Page 120 ---
+En
+cir ei Shpall la lined wh sha barre
+
+@
+
+L Pea Seema]
+
+al | a * ;
+iS cp Gis GAS a pat po Yn
+flops As, Bs & Qs store the sign of A, B & Q respectively. A binary ‘0” inserted inww the flip-flop
+nevis igh
+adams
+
+pa
+Gare
+
+--- Page 121 ---
+Initially, 0 DOLD 10011 101[5)
+Iteration! (Qa=1), 00000
+
+shrEAQ, 11001 ‘L00[4)
+shrBAQ, aio Tey
+shrEAQ, 10101 ovo
+0110110101
+
+--- Page 122 ---
+‘Computer Organ aon and Architect re
++The multilleand 4s added ro the partial product if the Arst least significant bit Is 0
+(proviced that there was a previous 1) na string of 0's n the multiple.
+«The partial pmduct doesn't change when the multiplier bit Is Wenttal ta the previons
+multiplier bit
+This algorithm is used for both the pesitive and negative numbers in signed 2's complement
+form, the hardware implementation ofthis algorithm isin figure below
+ea
+a be
+‘The Aawehart for booth mulrplicaton algorithm Is given below:
+-
+1
+flowchart for booth multiplication algorithm
+Numerical Example: Bouth algorithm
+PR=1017 1(Muleipicand)
+(QR=1001 (Multiplier)
+Array Muleipior
+‘The multiplication algorithm fist check the bits of the multiplier one at tine and form partial
+product This is a sequential process that requires a sequence of add and shift micro
+operation, This method is complicated and time consuming. The multiplication of 2 binary
+Tage)
+
+--- Page 123 ---
+‘Computer Organizavion and Architecnire
+imumbers can also he done with one micro operation hy using combinational cireutt that
+provides the product allt ance.
+Fxample.
+Consider that the multiplicand bits are bi and b0 and the multiplier bits are al and a0. The
+partial product is €3e2c1e0. The multiplication two bits a0 and al produces 2 binary 1 ifbath
+the bits are 1, otherwise it produces a binary 0. "This is identical to the AND operation and can
+be implemented with the AND gates as shown in figure.
+2-bit by 2-bit array multiplier
+Division Algorithm
+‘The division of two fixed point signed numbers can be done by a process of suocessive
+compare shift and subtraction. When it is implemented in digital computers, instead of
+shifting the divisor tothe right, the dividend or the partial remainder is shifted tothe left. The
+subtraction ean he obtained hy adding the number & to the 2's complement of numer R. The
+{information about the relative magnitudes of the infarmattan about the relative magnitudes
+‘of numbers can be obtained from the end carry,
+Hardware Implementation
+‘The hardware implementation for the division signed numbers is shown id the figure.
+4 == sfc
+Page 1m

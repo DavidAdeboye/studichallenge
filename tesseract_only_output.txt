@@ -1,0 +1,100 @@
+--- Page 1 ---
+Computer Organization and Architecture
+go, VARDHAMAN COLLEGE OF ENGINEERING
+(AUTONOMOUS)
+= Shamshabad — 501 218, Hyderabad
+DEPARTMENT OF INFORMATION TECHNOLOGY
+Computer —
+a —
+Architecture
+and
+w wi
+Organization _
+Unit - I (10 Lectures)
+Page 1
+
+--- Page 2 ---
+Computer Organization and Architecture
+
+STRUCTURE OF COMPUTERS: Computer types, functional units, basic operational concepts,
+Von-Neumann architecture, bus structures, software, performance, multiprocessors and
+multicomputer
+
+Book: Carl Hamacher, Zvonks Vranesic, SafeaZaky (2002), Computer Organization, 5th
+edition, McGraw Hill: Unit-1 Pages: 1-23
+
+Data representation, fixed and floating point and error detecting codes.
+
+Book: M. Moris Mano (2006), Computer System Architecture, 3rd edition, Pearson/PHI,
+India: Unit-3 Pages: 67-91
+
+REGISTER TRANSFER AND MICRO-OPERATIONS: Register transfer language, register
+transfer, bus and memory transfers, arithmetic micro-operations, logic micro-operations,
+shift micro-operations, arithmetic logic shift unit.
+
+Book: M. Moris Mano (2006), Computer System Architecture, 3rd edition, Pearson/PHI,
+India: Unit-3 Pages: 93-118
+
+Computer Architecture:
+
+Computer Architecture deals with giving operational attributes of the computer or Processor
+to be specific. It deals with details like physical memory, ISA (Instruction Set Architecture) of
+the processor, the number of bits used to represent the data types, Input Output mechanism
+and technique for addressing memories.
+
+Computer Organization:
+
+Computer Organization is realization of what is specified by the computer architecture .It
+deals with how operational attributes are linked together to meet the requirements specified
+by computer architecture. Some organizational attributes are hardware details, control
+signals, peripherals.
+
+EXAMPLE:
+
+Say you are in a company that manufactures cars, design and all low-level details of the car
+come under computer architecture (abstract, programmers view), while making it’s parts
+piece by piece and connecting together the different components of that car by keeping the
+basic design in mind comes under computer organization (physical and visible).
+Page 2
+
+--- Page 3 ---
+Computer Organization and Architecture
+L_____—_S SSS
+Often called microarchitecture (low level) Computer architecture (a
+bit higher level)
+Transparent from programmer (ex. a programmer does Programe View ee.
+Beh otenes i Programmer has to be
+not worry much how addition is implemented in sans :
+aware of which instruction
+hardware)
+set used)
+
+A ae F x Logic (Instruction set,
+Physical components (Circuit design, Adders, Signals, iddreceiig-caniies Bite
+Peripherals) ya giee
+
+ypes, Cache optimization
+n .
+How to do ? (implementation of the architecture) ng todo? (Instruction
+GENERATIONS OF A COMPUTER
+Generation in computer terminology is a change in technology a computer is/was being
+used. Initially, the generation term was used to distinguish between varying hardware
+technologies. But nowadays, generation includes both hardware and software, which
+together make up an entire computer system.
+There are totally five computer generations known till date. Each generation has been
+discussed in detail along with their time period and characteristics. Here approximate dates
+against each generations have been mentioned which are normally accepted.
+Following are the main five generations of computers
+S.N. Generation & Description
+1 First Generation
+The period of first generation: 1946-1959. Vacuum tube based.
+2 Second Generation
+The period of second generation: 1959-1965. Transistor based.
+3 Third Generation
+The period of third generation: 1965-1971. Integrated Circuit based.
+4 Fourth Generation
+The period of fourth generation: 1971-1980. VLSI microprocessor based.
+5 Fifth Generation
+The period of fifth generation: 1980-onwards. ULSI microprocessor based
+Fi :
+Page 3
